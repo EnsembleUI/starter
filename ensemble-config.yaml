@@ -1,0 +1,7 @@
+definitions:
+  # use page definitions 'local'' or 'remote' (hosted by Ensemble)
+  from: local
+  local:
+    path: assets/ensemble/pages
+  remote:
+    apiKey: <your_ensemble_app_apikey>
