@@ -1,7 +1,0 @@
-View:
-  children:
-    - VStack:
-        styles: { layout: center, alignment: center }
-        children:
-          - Text:
-              text: hello from Ensemble

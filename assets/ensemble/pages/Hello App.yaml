@@ -1,0 +1,6 @@
+View:
+  type: Column
+  children:
+    - Text:
+        styles: { fontSize: 20 }
+        text: hello from Ensemble
