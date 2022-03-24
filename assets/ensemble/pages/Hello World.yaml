@@ -1,7 +1,6 @@
 View:
+  type: Column
   children:
-    - VStack:
-        styles: { layout: center, alignment: center }
-        children:
-          - Text:
-              text: hello from Ensemble
+    - Text:
+        styles: { fontSize: 20 }
+        text: hello from Ensemble
