@@ -7,7 +7,7 @@ void main() {
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
-  static const rootPage = String.fromEnvironment('page', defaultValue: 'Hello World');
+  static const rootPage = String.fromEnvironment('page', defaultValue: 'Hello App');
 
   @override
   Widget build(BuildContext context) {
