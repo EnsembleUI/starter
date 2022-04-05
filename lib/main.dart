@@ -7,12 +7,15 @@ void main() {
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
-  static const rootPage = String.fromEnvironment('page', defaultValue: 'Hello App');
+  static const initialPage = String.fromEnvironment('page', defaultValue: 'Hello World');
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Ensemble().getPage(context, rootPage),
+    return FutureBuilder(
+        future: Ensemble().initialize(context),
+        builder: (context, AsyncSnapshot snapshot) => MaterialApp(
+          home: Ensemble().getPage(context, initialPage),
+        )
     );
   }
 }

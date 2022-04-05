@@ -55,7 +55,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: ae885ac33486236b1d405c301e90b15e3b7c4960
+      resolved-ref: d8c68bee6b9b0357b2669b9cd4168336f9beb0bd
       url: "https://github.com/EnsembleUI/ensemble.git"
     source: git
     version: "1.0.0+1"

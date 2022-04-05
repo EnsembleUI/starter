@@ -17,10 +17,10 @@ Ensemble's page definitions can be loaded locally (default) or remotely (via you
 - Run `flutter create .` to generate the runtime and fetch dependencies.
 
 ### Run
-- We include a sample definition locally. Open it with any text editor at `<your_folder>/ensemble_starter/assets/ensemble/pages/Hello App.yaml`.
-- To run this definition, run `flutter run lib/main.dart --dart-define=page='Hello App'`.
+- We include a sample definition locally. Open it with any text editor at `<your_folder>/ensemble_starter/assets/ensemble/pages/Hello World.yaml`.
+- To run this definition, run `flutter run`.
 - If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
-- You can add additional definition files in the same folder by simply change `--dart-define=page='Hello App'` to the correct name.
+- To run additional definition, create new file (e.g 'New App.yaml') in the same folder. Run with `flutter run --dart-define=page='New App'`.
 
 ### Run with remote definition (to be continued)
 To take advantage of Server-driven UI (change your UI at anytime from the server), you can host these definitions on a remote server.
