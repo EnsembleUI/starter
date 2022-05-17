@@ -1,0 +1,12 @@
+View:
+  type: Column
+  children:
+    - Text:
+        styles: { fontSize: 20 }
+        text: hello from Ensemble
+
+    - Button:
+        label: Go Somewhere 2
+        onTap:
+          action: navigateScreen
+          name: Goodbye

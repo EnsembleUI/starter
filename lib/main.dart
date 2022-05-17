@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'package:ensemble/EnsembleHome.dart';
 import 'package:ensemble/ensemble.dart';
 import 'package:flutter/material.dart';
 
@@ -5,17 +7,28 @@ void main() {
   runApp(const Home());
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
-  static const initialPage = String.fromEnvironment('page', defaultValue: 'Hello World');
+
+  @override
+  State<StatefulWidget> createState() => HomeState();
+}
+
+class HomeState extends State<Home> {
+  late final Future initApp;
+
+  @override
+  void initState() {
+    initApp = Ensemble().initialize(context);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: Ensemble().initialize(context),
-        builder: (context, AsyncSnapshot snapshot) => MaterialApp(
-          home: Ensemble().getPage(context, initialPage),
-        )
+        future: initApp,
+        builder: (context, AsyncSnapshot snapshot) =>
+          const MaterialApp(home: EnsembleHome())
     );
   }
 }

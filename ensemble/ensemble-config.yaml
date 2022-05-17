@@ -1,0 +1,26 @@
+definitions:
+  # where your page definitions are hosted ('local', 'remote' or 'ensemble')
+  from: local
+
+  # for embedding definitions locally in your Flutter App
+  local:
+    # the root directory where all your Apps definitions reside
+    path: ensemble/
+    # appId represents an App, and is a folder under the root directory
+    # Note that each App directory also has to be added manually under pubspec.yaml
+    appId: helloApp
+    # appHome is the name of the home screen. This will be the first screen when your App loads
+    appHome: Hello Home
+
+  # for hosting definitions on your own server
+  remote:
+    path: <your_http_server_hosting_the_definitions>
+    appId: helloApp
+    appHome: Hello Home
+
+  # for Ensemble-hosted definitions, simply enter your Ensemble's app key
+  ensemble:
+    # this is the Ensemble server URL. Do not change
+    path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev/app
+    # appId can be found on Ensemble Studio.
+    appId: <your_ensemble_app_id>

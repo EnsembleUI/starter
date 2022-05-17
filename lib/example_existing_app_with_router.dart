@@ -50,7 +50,7 @@ class Router {
       case home:
         return MaterialPageRoute(builder: (context) => const ExistingFlutterPage());
       case ensemble:
-        return Ensemble().getPageRoute('Hello World');
+        return Ensemble().getAppRoute();
       default:
         return MaterialPageRoute(
             builder: (context) => const Text("Unknown route"));

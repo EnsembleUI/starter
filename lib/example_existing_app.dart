@@ -55,7 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void loadEnsemblePage(BuildContext context) {
-    // Navigating to an Ensemble-powered page from your App.
-    Ensemble().navigateToPage(context, "Hello World");
+    // Navigating to the home page of the configured App
+    Ensemble().navigateApp(context);
+
+    // navigate to a specific screen using ID or name
+    //Ensemble().navigateApp(context, screenName: 'Goodbye');
   }
 }
