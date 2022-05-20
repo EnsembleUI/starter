@@ -1,9 +1,6 @@
 View:
   type: Column
   children:
-    - Divider:
-        styles:
-          thickness: 3
     - Text:
         styles: { fontSize: 20 }
         text: See you later
