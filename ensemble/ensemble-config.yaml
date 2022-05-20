@@ -5,7 +5,7 @@ definitions:
   # for embedding definitions locally in your Flutter App
   local:
     # the root directory where all your Apps definitions reside
-    path: ensemble/
+    path: ensemble/apps/
     # appId represents an App, and is a folder under the root directory
     # Note that each App directory also has to be added manually under pubspec.yaml
     appId: helloApp

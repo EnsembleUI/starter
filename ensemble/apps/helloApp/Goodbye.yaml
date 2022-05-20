@@ -1,12 +1,15 @@
 View:
   type: Column
   children:
+    - Divider:
+        styles:
+          thickness: 3
     - Text:
         styles: { fontSize: 20 }
-        text: hello from Ensemble
+        text: See you later
 
     - Button:
-        label: Go Somewhere 2
+        label: Go Home
         onTap:
           action: navigateScreen
-          name: Goodbye
+          name: Hello Home

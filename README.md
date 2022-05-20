@@ -16,28 +16,33 @@ Ensemble's page definitions can be loaded locally (default) or remotely (via you
 - Navigate to this project with `cd ensemble_starter`.
 - Run `flutter create .` to generate the runtime and fetch dependencies.
 
-
 ### Run
-- We included a sample App under /ensemble/helloApp with the home screen named `Hello Home`. Open it with any text editor at `<your_folder>/ensemble_starter/ensemble/helloApp/Hello Home.yaml`.
+- We included a sample App under /ensemble/apps/helloApp with the home screen named `Hello Home`. Open it with any text editor at `<your_folder>/ensemble_starter/ensemble/apps/helloApp/Hello Home.yaml`.
 - To run this App, simply use the default config and run `flutter run`.
 - If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
+- Try making changes to the definition. Upon re-run your screen should reflect the changes.
 
-### Run with remote definition (to be continued)
-To take advantage of Server-driven UI (change your UI at anytime from the server), you can host these definitions on a remote server.
+
+## Editing Ensemble definitions
+Ensemble use JSON Schema to enable type-ahead support. We recommend using an Editor with JSON Schema support for an optimal experience.
+### Android Studio
+- Open Preferences and go to `Languages & Frameworks > Schemas and DTDs > JSON Schema Mappings`
+- Add a new schema
+- Under Schema URL, enter `https://raw.githubusercontent.com/EnsembleUI/ensemble/main/assets/schema/ensemble_schema.json`
+- Select Schema version 7
+- Add a Directory mapping right below, pointing to `<your_folder>/ensemble_starter/ensemble/apps`.
+- Editing any definition files will show the appropriate type-ahead.
+
+### Visual Studio Code
+- With [VS Code](https://code.visualstudio.com/download), open folder `<your_folder>/ensemble_starter/ensemble/apps`. 
+- Type-ahead should just work with the the default config (in .vscode/settings.json).
+
 
 ## Misc
+### Run with remote definition (to be continued)
+To take advantage of Server-driven UI (change your UI at anytime from the server), you can host these definitions on your file server.
+
 ### For Flutter developers
 Use [Android Studio](https://developer.android.com/studio) to open this project and run `main.dart`.
 To incorporate Ensemble pages to your existing Flutter App, see `example_existing_app_*.dart`.
-
-### Editing Ensemble definition
-Ensemble use JSON Schema to enable type-ahead support. We recommend using an Editor with JSON Schema support for an optimal experience.
-#### Android Studio
-...
-
-#### Visual Studio Code
-With [VS Code](https://code.visualstudio.com/download), open folder `<your_folder>/ensemble_starter/assets/ensemble`. Type-ahead should just work with the the default config (in .vscode/settings.json).
-
-#### Other Editors
-- Many Text Editors with support for JSON Schema. Please follow the appropriate editor's guides on how to include the JSON Schema (located in /ensemble/schema)
 

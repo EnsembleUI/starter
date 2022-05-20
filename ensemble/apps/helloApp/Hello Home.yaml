@@ -3,10 +3,10 @@ View:
   children:
     - Text:
         styles: { fontSize: 20 }
-        text: See you later
+        text: hello from Ensemble
 
     - Button:
-        label: Go Home
+        label: Go Somewhere
         onTap:
           action: navigateScreen
-          name: Hello Home
+          name: Goodbye

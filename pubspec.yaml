@@ -65,5 +65,5 @@ flutter:
   assets:
     - ensemble/
     # unfortunately we have to list *all* Apps directories here. It's a Flutter requirement
-    - ensemble/helloApp/
-    #- ensemble/another_app_of_yours/
+    - ensemble/apps/helloApp/
+    #- ensemble/apps/another_app_of_yours/
