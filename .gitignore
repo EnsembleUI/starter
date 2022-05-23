@@ -48,3 +48,4 @@ ios
 android
 .gradle
 windows
+local.properties
