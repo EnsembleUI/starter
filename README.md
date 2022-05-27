@@ -13,7 +13,7 @@ Ensemble's page definitions can be hosted via Ensemble Studio(default), on your 
 
 ### Getting Started with Ensemble Studio
 - Login to studio.ensembleui.com. If you don't have a login, request one by going here - https://ensembleui.com/, clicking on "Join the Waitlist" or "Request an Account" and filling up the form. Make sure you put your google email (your gmail or work email if that's on google). We'll create an account for you and send you an email with details.
-- Select your App or any of the available sample Apps.
+- Select your App or any of the available sample Apps and copy the appid from the url. The appid is the uuid string after /app/ in the url till the end or the next /.
 - Go to the App's Setting to get your `App ID`. Enter this under appId in `/ensemble/ensemble-config.yaml`
 - Run `flutter create --platforms=ios,android,web .` (note the end period) to generate the runtime and fetch dependencies. Other available platforms are `windows,macos`. You'll only have to do this step once.
 - Run `flutter pub upgrade` to update dependencies as the supported libraries change.
