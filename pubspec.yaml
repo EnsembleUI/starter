@@ -29,12 +29,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations: # Add this line
+    sdk: flutter
+
+  #i18n for Flutter
+  flutter_i18n:
+    git:
+      url: https://github.com/ilteoood/flutter_i18n.git
+      ref: master
 
   # embed Ensemble as a sibling project
   ensemble:
     git:
       url: https://github.com/EnsembleUI/ensemble.git
       ref: main
+  #ensemble:
+  #  path: ../ensemble
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
