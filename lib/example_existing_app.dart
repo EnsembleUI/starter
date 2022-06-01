@@ -1,8 +1,13 @@
 import 'package:ensemble/ensemble.dart';
+import 'package:ensemble/util/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 /// demonstrating Ensemble integration with your existing Flutter App
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Ensemble().initialize();
   runApp(const MyApp());
 }
 
@@ -12,6 +17,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: Utils.globalAppKey,
+      localizationsDelegates: [
+        Ensemble().definitionProvider!.getI18NDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      builder: FlutterI18n.rootAppBuilder(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -36,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // Ensemble will auto-initialize once upon loading the first page.
     // However you can pre-initialize to make the first page load faster
-    Ensemble().initialize(context);
+    //Ensemble().initialize(context);
   }
 
   @override

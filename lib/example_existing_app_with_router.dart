@@ -1,7 +1,12 @@
 import 'package:ensemble/ensemble.dart';
+import 'package:ensemble/util/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Ensemble().initialize();
   runApp(const Home());
 }
 
@@ -14,7 +19,14 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      navigatorKey: Utils.globalAppKey,
+      localizationsDelegates: [
+        Ensemble().definitionProvider!.getI18NDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      builder: FlutterI18n.rootAppBuilder(),
       initialRoute: Router.home,
       onGenerateRoute: Router.handleGenerateRoute,
     );
