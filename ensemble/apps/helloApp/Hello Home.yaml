@@ -6,7 +6,7 @@ View:
         text: hello from Ensemble
 
     - Button:
-        label: Go Somewhere
+        label: Go Somewhere in default language r@ensemblelive.gobtn
         onTap:
           action: navigateScreen
           name: Goodbye

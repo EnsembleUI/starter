@@ -1,0 +1,49 @@
+ensemblelive:
+  subtitle: "Voer uw App ID in of scan de barcode van Ensemble Studio om uw App te bekijken"
+  gobtn: "Gaan!"
+  or: of
+  user_name: User name
+  password: Password
+  sign_in: Sign In
+
+
+kpn:
+  Dashboard: Dashboard
+  internet_link: Internet Verbinding
+  local_network: Lokaal netwerk
+  security: Beveiliging
+  phone: Telefoon
+  wifi: Wi-Fi
+  modem_settings: Modem instellingen
+  host_name: Hostnaam
+  ip_address: IP adres
+  subnet_mask: subnetmasker
+  user_name: Username
+  pool_start: Pool start IPv4
+  pool_end: Pool end IPv4
+  lease_time_minutes: Lease time in minutes
+  remaining_time: Remaining time
+  dns_server: DNS server
+  dhcp_authorative: DHCP authorative
+  restore_dhcp: Restore DHCP settings
+  restore: Restore
+  add: Add
+  device: device
+  mac_address: MAC address
+  apply: Apply
+  password: Password
+  sign_in: Inloggen
+  logout: Uitloggen
+  dhcp: DHCP
+  dhcp_server: DHCP server
+  dhcp_leases: DHCP leases
+  dashboard:
+    model_name: Modelnaa
+    product_class: Product Class
+    serial_number: Serial Number
+    hardware_version: Hardware Version
+    software_version: Software Version
+    base_mac: Base MAC
+  login:
+    welcome: Welkom
+
