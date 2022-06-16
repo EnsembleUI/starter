@@ -35,5 +35,5 @@ definitions:
     path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev/app
     # appId can be found on Ensemble Studio.
     appId: 40dcdbe9-1ac3-4aab-8ee2-0bcdd2f1ca7b
+    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
     # i18nPath: https://d1x5t4jfwtkdjl.cloudfront.net/web/assets/assets/i18n
-    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/d307e0521f5449ebfab24f26ef755397fa7f43ae/ensemble/i18n
