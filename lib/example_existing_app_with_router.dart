@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       builder: FlutterI18n.rootAppBuilder(),
+      theme: Ensemble().getAppTheme(),
       initialRoute: Router.home,
       onGenerateRoute: Router.handleGenerateRoute,
     );

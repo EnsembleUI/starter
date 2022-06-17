@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       builder: FlutterI18n.rootAppBuilder(),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: Ensemble().getAppTheme(),
       home: const MyHomePage(title: 'My Existing App'),
     );
   }

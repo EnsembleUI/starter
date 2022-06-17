@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate
         ],home: const EnsembleHome(),
+        theme: Ensemble().getAppTheme(),
         builder: FlutterI18n.rootAppBuilder(),
     );
   }
