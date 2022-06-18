@@ -18,16 +18,16 @@ kpn:
   host_name: Hostnaam
   ip_address: IP adres
   subnet_mask: Subnetmasker
-  user_name: Username
+  user_name: User name
   pool_start: Pool start IPv4
   pool_end: Pool end IPv4
   lease_time_minutes: Lease time in minutes
   remaining_time: Remaining time
   dns_server: DNS server
   dhcp_authorative: DHCP authorative
-  restore_dhcp: Restore DHCP settings
-  restore: Restore
-  add: Add
+  restore_dhcp: Herstel DHCP configuratie
+  restore: Herstellen
+  add: Toevoegen
   device: Device
   mac_address: MAC adres
   apply: Apply
@@ -38,12 +38,15 @@ kpn:
   dhcp_server: DHCP server
   dhcp_leases: DHCP leases
   dashboard:
-    model_name: Modelnaam
-    product_class: Product Class
+    model_name: Model naam
+    product_class: Model type
     serial_number: Serial Number
-    hardware_version: Hardware Version
-    software_version: Software Version
-    base_mac: Base MAC adres
+    hardware_version: Hardware versie
+    software_version: Software versie
+    bootloader_version: Bootloader versie
+    uptime: Tijd actief
+    base_mac: Wan MAC adres
+    base_ip: Internet IP adres
   login:
     welcome: Welkom
 
