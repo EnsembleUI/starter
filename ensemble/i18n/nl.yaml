@@ -38,15 +38,18 @@ kpn:
   dhcp_server: DHCP server
   dhcp_leases: DHCP leases
   dashboard:
-    model_name: Model naam
-    product_class: Model type
-    serial_number: Serial Number
-    hardware_version: Hardware versie
-    software_version: Software versie
-    bootloader_version: Bootloader versie
-    uptime: Tijd actief
-    base_mac: Wan MAC adres
-    base_ip: Internet IP adres
+    information:
+      model_name: Model naam
+      product_class: Model type
+      serial_number: Serial Number
+      hardware_version: Hardware versie
+      software_version: Software versie
+      bootloader_version: Bootloader versie
+      uptime: Tijd actief
+      base_mac: Wan MAC adres
+      base_ip: Internet IP adres
+    time:
+      date_time: Huidige datum en tijd
   login:
     welcome: Welkom
 
