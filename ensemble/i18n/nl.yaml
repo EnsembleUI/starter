@@ -30,7 +30,7 @@ kpn:
   add: Toevoegen
   device: Device
   mac_address: MAC adres
-  apply: Apply
+  apply: Toepassen
   password: Password
   sign_in: Inloggen
   logout: Uitloggen
