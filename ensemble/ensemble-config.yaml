@@ -32,7 +32,7 @@ definitions:
   # for Ensemble-hosted definitions, simply enter your Ensemble's app key
   ensemble:
     # this is the Ensemble server URL. Do not change
-    path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev/app
+    path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
     # appId can be found on Ensemble Studio.
     appId: 40dcdbe9-1ac3-4aab-8ee2-0bcdd2f1ca7b
     i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
