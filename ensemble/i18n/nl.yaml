@@ -52,4 +52,12 @@ kpn:
       date_time: Huidige datum en tijd
   login:
     welcome: Welkom
-
+  wifi:
+    settings: Instellingen
+    settings_description: |
+      Op deze pagina pas je de instellingen van je hoofd Wi-Fi netwerk aan. Je kan hier ook de instellingen van de Wi-Fi radio aanpassen. De radio instellingen hebben ook effect op andere Wi-Fi netwerken (zoals het gast netwerk of extra Wi-Fi netwerk).
+      
+      Scan deze QR code om te verbinden met je Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+      
+      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+    main_wifi: Hoofd Wi-Fi
