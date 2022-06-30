@@ -6,14 +6,29 @@ ensemblelive:
   password: Password
   sign_in: Sign In
 
-
 kpn:
+  
+  # common labels:
+  cancel: Annuleren
+  save: Opslaan
+  restore: Herstellen
+  add: Toevoegen
+  device: Device
+  mac_address: MAC adres
+  apply: Toepassen
+  password: Password
+  sign_in: Inloggen
+  logout: Uitloggen
+
+  # navigation
   Dashboard: Dashboard
   internet_link: Internet Verbinding
   local_network: Lokaal netwerk
   security: Beveiliging
   phone: Telefoon
   modem_settings: Modem instellingen
+
+
   host_name: Hostnaam
   ip_address: IP adres
   subnet_mask: Subnetmasker
@@ -25,14 +40,8 @@ kpn:
   dns_server: DNS server
   dhcp_authorative: DHCP authorative
   restore_dhcp: Herstel DHCP configuratie
-  restore: Herstellen
-  add: Toevoegen
-  device: Device
-  mac_address: MAC adres
-  apply: Toepassen
-  password: Password
-  sign_in: Inloggen
-  logout: Uitloggen
+  
+  
   dhcp: DHCP
   dhcp_server: DHCP server
   dhcp_leases: DHCP leases
@@ -51,6 +60,10 @@ kpn:
       date_time: Huidige datum en tijd
   login:
     welcome: Welkom
+  
+  
+
+  # wifi tabs
   wifi:
     settings: Instellingen
     settings_description: |
@@ -60,3 +73,42 @@ kpn:
       
       Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
     main_wifi: Hoofd Wi-Fi
+    name_ssid: Wi-Fi naam (SSID)
+    password: Wi-Fi wachtwoord
+    visibility: Zichtbaarheid
+    encryption_type: Encryptie type
+    max_clients: Maximaal aantal clients
+    max_clients_2g: Maximaal aantal clients 2.4 GHz
+    max_clients_5g: Maximaal aantal clients 5 GHz
+    wps_pairing: WPS pairing
+    start: Start
+    radio: Radio
+    wireless_mode_2g: 2.4 GHz wireless mode
+    bandwidth_2g: 2.4 GHz bandwidth
+    channel_2g: 2.4 GHz channel
+    wireless_mode_5g: 5 GHz wireless mode
+    bandwidth_5g: 5 GHz bandwidth
+    channel_5g: 5 GHz channel
+    auto_select_channel: Auto select channel
+    guest_wifi: Gast Wi-Fi
+    guest_wifi_description: |
+      Op deze pagina pas je de instellingen van je gast Wi-Fi netwerk aan. Het gast Wi-Fi netwerk kan je gebruiken om je gasten toegang tot het internet te geven. Gasten op dit netwerk hebben geen toegang tot uw eigen apparaten op het hoofd netwerk.
+      
+      Scan deze QR code om te verbinden met je gast Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan je gasten als ze met je Wi-Fi willen verbinden.
+      
+      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+    airtime_percentage: Airtime percentage t.o.v. hoofd netwerk
+    guest_client_timebox: Gast client timebox (min)
+    extra_wifi: Extra Wi-Fi
+    extra_wifi_description_2g: |
+      Op deze pagina pas je de instellingen van je extra Wi-Fi netwerken aan. De twee verschillende radio bandbreedtes (2.4 GHz en 5 GHz) zijn hier gescheiden in twee losse netwerken. Deze losse netwerken kun je bijvoorbeeld gebruiken voor apparaten die alleen op 2.4 GHz functioneren.
+      
+      Scan deze QR code om te verbinden met je 2.4 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+      
+      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+    extra_wifi_2g: Extra Wi-Fi 2.4 GHz
+    extra_wifi_5g: Extra Wi-Fi 5 GHz
+    extra_wifi_description_5g: |
+      Scan deze QR code om te verbinden met je 5 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+      
+      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
