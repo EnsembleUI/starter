@@ -13,7 +13,6 @@ kpn:
   local_network: Lokaal netwerk
   security: Beveiliging
   phone: Telefoon
-  wifi: Wi-Fi
   modem_settings: Modem instellingen
   host_name: Hostnaam
   ip_address: IP adres
