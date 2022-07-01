@@ -66,8 +66,6 @@ kpn:
       date_time: Huidige datum en tijd
   login:
     welcome: Welkom
-  
-  
 
   # wifi tabs
   wifi:
@@ -126,3 +124,25 @@ kpn:
       Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
     availability_2g: 2.4 GHz availability
     availability_5g: 5 GHz availability
+  
+  # security tabs
+  security:
+    firewall: Firewall
+    device_block: Apparaat blokkade
+    port_forwarding: Port forwarding
+    upnp: UPnP
+    dmz: DMZ
+    firewall_description: |
+      Op deze pagina kunt u het niveau van uw firewall instellen. De firewall is een beveiling tussen het netwerk in uw huis en het internet. Het beschermt dus ook de apparaten die op uw netwerk thuis verbonden zijn van het internet.
+    
+      Afhankelijk van het niveau dat u instelt, zullen uw apparaten beter beveiligd zijn van het internet. Een betere beveiliging zal ook beperkingen met zich mee brengen in het internet gebruik.
+    firewall_level: Firewall niveau
+    firewall_level_low: Low
+    firewall_level_medium: Medium
+    firewall_level_high: High
+    firewall_level_custom: Custom
+    firewall_level_description: |
+      Firewall niveau medium: deze instelling blokeert alle inkomende connecties. Alle uitgaande connecties zijn wel toegestaan, met uitzondering van NetBIOS services. Met deze services kunnen apparaten in uw lokale netwerk met elkaar communiceren. Het is dus niet noodzakelijk voor deze service om met het internet te communiceren.
+    allow_ping: Modem reageert op pings
+    open_ports_ipv6: Open ports in the firewall (for IPv6)
+    open_port: Open port
