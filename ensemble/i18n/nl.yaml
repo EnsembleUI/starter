@@ -20,13 +20,19 @@ kpn:
   sign_in: Inloggen
   logout: Uitloggen
 
+  # common API messages
+  success: Updated successfully.
+  error: Update failed. Please try again.
+
   # navigation
-  Dashboard: Dashboard
-  internet_link: Internet Verbinding
-  local_network: Lokaal netwerk
-  security: Beveiliging
-  phone: Telefoon
-  modem_settings: Modem instellingen
+  nav:
+    dashboard: Dashboard
+    internet_link: Internet Verbinding
+    local_network: Lokaal netwerk
+    security: Beveiliging
+    wifi: Wi-Fi
+    phone: Telefoon
+    modem_settings: Modem instellingen
 
 
   host_name: Hostnaam
@@ -66,6 +72,12 @@ kpn:
   # wifi tabs
   wifi:
     settings: Instellingen
+    wifi_mesh: Wi-Fi Mesh
+    guest_wifi: Gast Wi-Fi
+    extra_wifi: Extra Wi-Fi
+    schema: Schema
+    spectrum: Spectrum
+    usage: Gebruik
     settings_description: |
       Op deze pagina pas je de instellingen van je hoofd Wi-Fi netwerk aan. Je kan hier ook de instellingen van de Wi-Fi radio aanpassen. De radio instellingen hebben ook effect op andere Wi-Fi netwerken (zoals het gast netwerk of extra Wi-Fi netwerk).
       
@@ -90,7 +102,7 @@ kpn:
     bandwidth_5g: 5 GHz bandwidth
     channel_5g: 5 GHz channel
     auto_select_channel: Auto select channel
-    guest_wifi: Gast Wi-Fi
+    
     guest_wifi_description: |
       Op deze pagina pas je de instellingen van je gast Wi-Fi netwerk aan. Het gast Wi-Fi netwerk kan je gebruiken om je gasten toegang tot het internet te geven. Gasten op dit netwerk hebben geen toegang tot uw eigen apparaten op het hoofd netwerk.
       
@@ -99,7 +111,7 @@ kpn:
       Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
     airtime_percentage: Airtime percentage t.o.v. hoofd netwerk
     guest_client_timebox: Gast client timebox (min)
-    extra_wifi: Extra Wi-Fi
+    
     extra_wifi_description_2g: |
       Op deze pagina pas je de instellingen van je extra Wi-Fi netwerken aan. De twee verschillende radio bandbreedtes (2.4 GHz en 5 GHz) zijn hier gescheiden in twee losse netwerken. Deze losse netwerken kun je bijvoorbeeld gebruiken voor apparaten die alleen op 2.4 GHz functioneren.
       
@@ -112,3 +124,5 @@ kpn:
       Scan deze QR code om te verbinden met je 5 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
       
       Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+    availability_2g: 2.4 GHz availability
+    availability_5g: 5 GHz availability
