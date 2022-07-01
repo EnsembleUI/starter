@@ -15,10 +15,14 @@ kpn:
   add: Toevoegen
   device: Device
   mac_address: MAC adres
+  host_name: Hostnaam
+  ip_address: IP adres
   apply: Toepassen
-  password: Password
+  password: Wachtwoord
   sign_in: Inloggen
   logout: Uitloggen
+  status: Status
+  user_name: Gebruikersnaam
 
   # common API messages
   success: Updated successfully.
@@ -35,22 +39,16 @@ kpn:
     modem_settings: Modem instellingen
 
 
-  host_name: Hostnaam
-  ip_address: IP adres
-  subnet_mask: Subnetmasker
-  user_name: User name
-  pool_start: Pool start IPv4
-  pool_end: Pool end IPv4
-  lease_time_minutes: Lease time in minutes
+  
+  
+  
+  
   remaining_time: Remaining time
-  dns_server: DNS server
+  
   dhcp_authorative: DHCP authorative
   restore_dhcp: Herstel DHCP configuratie
   
   
-  dhcp: DHCP
-  dhcp_server: DHCP server
-  dhcp_leases: DHCP leases
   dashboard:
     information:
       model_name: Model naam
@@ -66,6 +64,31 @@ kpn:
       date_time: Huidige datum en tijd
   login:
     welcome: Welkom
+
+  # local network tabs
+  local_network:
+    topology: Topology
+    connected_devices: Verbonden apparaten
+    dhcp: DHCP
+    reserved_ip: Gereserveerd IP
+    dyndns: DynDNS
+    ipv6: IPv6
+    arp_table: ARP tabel
+    usage: Gebruik
+    dhcp_server: DHCP server
+    subnet_mask: Subnetmasker
+    pool_start: Pool start IPv4
+    pool_end: Pool end IPv4
+    lease_time_minutes: Lease time in minutes
+    dhcp_leases: DHCP leases
+    dns_server: DNS server
+    dyndns_description: |
+      Op deze pagina kunt u de DynDNS service instellen. Met deze service geeft u een domein-, of hostnaam aan een statisch of dynamisch IP adres binnen uw lokale netwerk. Het apparaat met dit IP adres is vervolgens bereikbaar via deze domein-, of hostnaam. 
+      
+      Gebruik een van de ondersteunde DynDNS services.
+    dyndns_service: DynDNS service
+    dyndns_host: Host- of domeinnaam
+    dyndns_email: Email of gebruikersnaam
 
   # wifi tabs
   wifi:
