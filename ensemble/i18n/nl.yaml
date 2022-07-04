@@ -12,6 +12,7 @@ kpn:
   cancel: Annuleren
   save: Opslaan
   restore: Herstellen
+  modify: Modify
   add: Toevoegen
   device: Device
   mac_address: MAC adres
@@ -37,17 +38,6 @@ kpn:
     wifi: Wi-Fi
     phone: Telefoon
     modem_settings: Modem instellingen
-
-
-  
-  
-  
-  
-  remaining_time: Remaining time
-  
-  dhcp_authorative: DHCP authorative
-  restore_dhcp: Herstel DHCP configuratie
-  
   
   dashboard:
     information:
@@ -64,6 +54,7 @@ kpn:
       date_time: Huidige datum en tijd
   login:
     welcome: Welkom
+    error: Unable to login
 
   # local network tabs
   local_network:
@@ -89,6 +80,8 @@ kpn:
     dyndns_service: DynDNS service
     dyndns_host: Host- of domeinnaam
     dyndns_email: Email of gebruikersnaam
+    remaining_time: Remaining time
+    restore_dhcp: Herstel DHCP configuratie
 
   # wifi tabs
   wifi:
@@ -169,3 +162,22 @@ kpn:
     allow_ping: Modem reageert op pings
     open_ports_ipv6: Open ports in the firewall (for IPv6)
     open_port: Open port
+
+  # modem management tabs
+  modem:
+    information: Informatie
+    admin_password: Admin wachtwoord
+    time_ntp: Tijd (NTP)
+    time: Tijd
+    remote_help: Hulp op afstand
+    backup: Backup
+    system: Systeem
+    performance_charts: Prestatie grafieken
+    current_date_time: Huidige datum en tijd
+    change_admin_password: Admin wachtwoord veranderen
+    admin_password_description: |
+      Op deze pagina kunt u het wachtwoord van het modem opnieuw instellen. Let op: dit is niet het wachtwoord van uw Wi-Fi signaal. Dit wachtwoord gebruikt u om in te loggen in deze app.
+    current_password: Huidig wachtwoord
+    new_password: Nieuw wachtwoord
+    confirm_new_password: Nieuw wachtwoord herhalen
+    invalid_password: Invalid password
