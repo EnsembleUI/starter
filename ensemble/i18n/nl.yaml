@@ -181,3 +181,7 @@ kpn:
     new_password: Nieuw wachtwoord
     confirm_new_password: Nieuw wachtwoord herhalen
     invalid_password: Invalid password
+    system_reboot_description: Herstart uw modem
+    system_reboot: Herstart
+    system_reset_description: Reset uw modem
+    system_reset: Reset
