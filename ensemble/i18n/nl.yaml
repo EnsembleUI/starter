@@ -181,6 +181,7 @@ kpn:
     new_password: Nieuw wachtwoord
     confirm_new_password: Nieuw wachtwoord herhalen
     invalid_password: Invalid password
+    system_description: Heb je een probleem met tv, bellen, internet of wifi? Los dit op door KPN Box (modem) te herstarten of te resetten. Probeer altijd eerst je modem (Experia Box) opnieuw op te starten. Bij resetten vervallen alle persoonlijke instellingen.
     system_reboot_description: Herstart uw modem
     system_reboot: Herstart
     system_reset_description: Reset uw modem
