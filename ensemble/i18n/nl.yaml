@@ -19,6 +19,8 @@ kpn:
   mac_address: MAC adres
   host_name: Hostnaam
   ip_address: IP adres
+  ip4_address: IPv4 adres
+  ip6_address: IPv6 adres
   apply: Toepassen
   password: Wachtwoord
   sign_in: Inloggen
