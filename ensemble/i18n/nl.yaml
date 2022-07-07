@@ -25,7 +25,6 @@ kpn:
   logout: Uitloggen
   status: Status
   user_name: Gebruikersnaam
-  wifi: Wi-Fi
   screen_unavailable: Dit scherm is niet beschikbaar
 
   # common API messages
