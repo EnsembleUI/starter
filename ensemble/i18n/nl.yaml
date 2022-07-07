@@ -1,10 +1,10 @@
 ensemblelive:
-    subtitle: "Voer uw App ID in of scan de barcode van Ensemble Studio om uw App te bekijken"
-    gobtn: "Gaan!"
-    or: of
-    user_name: User name
-    password: Password
-    sign_in: Sign In
+  subtitle: "Voer uw App ID in of scan de barcode van Ensemble Studio om uw App te bekijken"
+  gobtn: "Gaan!"
+  or: of
+  user_name: User name
+  password: Password
+  sign_in: Sign In
   
   kpn:
     
