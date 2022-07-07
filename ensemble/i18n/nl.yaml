@@ -8,9 +8,10 @@ ensemblelive:
 
 kpn:
   
-  # common labels:
+  # common labels
   cancel: Annuleren
   save: Opslaan
+  close: Dichtbij
   restore: Herstellen
   modify: Modify
   add: Toevoegen
@@ -24,6 +25,8 @@ kpn:
   logout: Uitloggen
   status: Status
   user_name: Gebruikersnaam
+  wifi: Wi-Fi
+  screen_unavailable: Dit scherm is niet beschikbaar
 
   # common API messages
   success: Updated successfully.
@@ -38,7 +41,21 @@ kpn:
     wifi: Wi-Fi
     phone: Telefoon
     modem_settings: Modem instellingen
+    internet_connection: Internet verbinding
+    internet_connection_status: Verbonden met het internet via
+    internet_ip_address: "Uw modem is verbonden met het internet op het publieke IP adres:"
+    internet_last_change: "De internetverbinding is actief gedurende:"
+    this_modem: Dit modem
+    info_about_device: Hier staan gegevens over dit apparaat
+    firmware_version: "De firmware versie is:"
   
+  home:
+    wifi_network_active: Uw Wi-Fi netwerk is actief
+    qr_code_instruction: Scan deze QR code om te verbinden met je hoofd	Wi-Fi netwerk.
+    wifi_name_ssid: Wi-Fi naam (SSID)
+    wifi_password: Wi-Fi wachtwoord
+
+
   dashboard:
     information:
       model_name: Model naam
@@ -85,6 +102,7 @@ kpn:
 
   # wifi tabs
   wifi:
+    main: Hoofd
     settings: Instellingen
     wifi_mesh: Wi-Fi Mesh
     guest_wifi: Gast Wi-Fi
@@ -140,7 +158,8 @@ kpn:
       Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
     availability_2g: 2.4 GHz availability
     availability_5g: 5 GHz availability
-  
+    pairing_in_progress: Pairing in progress...
+    
   # security tabs
   security:
     firewall: Firewall
