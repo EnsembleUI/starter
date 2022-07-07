@@ -1,206 +1,216 @@
 ensemblelive:
-  subtitle: "Voer uw App ID in of scan de barcode van Ensemble Studio om uw App te bekijken"
-  gobtn: "Gaan!"
-  or: of
-  user_name: User name
-  password: Password
-  sign_in: Sign In
-
-kpn:
+    subtitle: "Voer uw App ID in of scan de barcode van Ensemble Studio om uw App te bekijken"
+    gobtn: "Gaan!"
+    or: of
+    user_name: User name
+    password: Password
+    sign_in: Sign In
   
-  # common labels
-  cancel: Annuleren
-  save: Opslaan
-  close: Dichtbij
-  restore: Herstellen
-  modify: Modify
-  add: Toevoegen
-  device: Device
-  mac_address: MAC adres
-  host_name: Hostnaam
-  ip_address: IP adres
-  apply: Toepassen
-  password: Wachtwoord
-  sign_in: Inloggen
-  logout: Uitloggen
-  status: Status
-  user_name: Gebruikersnaam
-  screen_unavailable: Dit scherm is niet beschikbaar
-
-  # common API messages
-  success: Updated successfully.
-  error: Update failed. Please try again.
-
-  # navigation
-  nav:
-    dashboard: Dashboard
-    internet_link: Internet Verbinding
-    local_network: Lokaal netwerk
-    security: Beveiliging
-    wifi: Wi-Fi
-    phone: Telefoon
-    modem_settings: Modem instellingen
-    internet_connection: Internet verbinding
-    internet_connection_status: Verbonden met het internet via
-    internet_ip_address: "Uw modem is verbonden met het internet op het publieke IP adres:"
-    internet_last_change: "De internetverbinding is actief gedurende:"
-    this_modem: Dit modem
-    info_about_device: Hier staan gegevens over dit apparaat
-    firmware_version: "De firmware versie is:"
+  kpn:
+    
+    # common labels
+    cancel: Annuleren
+    save: Opslaan
+    close: Dichtbij
+    restore: Herstellen
+    modify: Modify
+    add: Toevoegen
+    device: Device
+    mac_address: MAC adres
+    host_name: Hostnaam
+    ip_address: IP adres
+    apply: Toepassen
+    password: Wachtwoord
+    sign_in: Inloggen
+    logout: Uitloggen
+    status: Status
+    user_name: Gebruikersnaam
+    screen_unavailable: Dit scherm is niet beschikbaar
   
-  home:
-    wifi_network_active: Uw Wi-Fi netwerk is actief
-    qr_code_instruction: Scan deze QR code om te verbinden met je hoofd	Wi-Fi netwerk.
-    wifi_name_ssid: Wi-Fi naam (SSID)
-    wifi_password: Wi-Fi wachtwoord
-
-
-  dashboard:
-    information:
-      model_name: Model naam
-      product_class: Model type
-      serial_number: Serial Number
-      hardware_version: Hardware versie
-      software_version: Software versie
-      bootloader_version: Bootloader versie
-      uptime: Tijd actief
-      base_mac: Wan MAC adres
-      base_ip: Internet IP adres
-    time:
-      date_time: Huidige datum en tijd
-  login:
-    welcome: Welkom
-    error: Unable to login
-
-  # local network tabs
-  local_network:
-    topology: Topology
-    connected_devices: Verbonden apparaten
-    dhcp: DHCP
-    reserved_ip: Gereserveerd IP
-    dyndns: DynDNS
-    ipv6: IPv6
-    arp_table: ARP tabel
-    usage: Gebruik
-    dhcp_server: DHCP server
-    subnet_mask: Subnetmasker
-    pool_start: Pool start IPv4
-    pool_end: Pool end IPv4
-    lease_time_minutes: Lease time in minutes
-    dhcp_leases: DHCP leases
-    dns_server: DNS server
-    dyndns_description: |
-      Op deze pagina kunt u de DynDNS service instellen. Met deze service geeft u een domein-, of hostnaam aan een statisch of dynamisch IP adres binnen uw lokale netwerk. Het apparaat met dit IP adres is vervolgens bereikbaar via deze domein-, of hostnaam. 
-      
-      Gebruik een van de ondersteunde DynDNS services.
-    dyndns_service: DynDNS service
-    dyndns_host: Host- of domeinnaam
-    dyndns_email: Email of gebruikersnaam
-    remaining_time: Remaining time
-    restore_dhcp: Herstel DHCP configuratie
-
-  # wifi tabs
-  wifi:
-    main: Hoofd
-    settings: Instellingen
-    wifi_mesh: Wi-Fi Mesh
-    guest_wifi: Gast Wi-Fi
-    extra_wifi: Extra Wi-Fi
-    schema: Schema
-    spectrum: Spectrum
-    usage: Gebruik
-    settings_description: |
-      Op deze pagina pas je de instellingen van je hoofd Wi-Fi netwerk aan. Je kan hier ook de instellingen van de Wi-Fi radio aanpassen. De radio instellingen hebben ook effect op andere Wi-Fi netwerken (zoals het gast netwerk of extra Wi-Fi netwerk).
-      
-      Scan deze QR code om te verbinden met je Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
-      
-      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
-    main_wifi: Hoofd Wi-Fi
-    name_ssid: Wi-Fi naam (SSID)
-    password: Wi-Fi wachtwoord
-    visibility: Zichtbaarheid
-    encryption_type: Encryptie type
-    max_clients: Maximaal aantal clients
-    max_clients_2g: Maximaal aantal clients 2.4 GHz
-    max_clients_5g: Maximaal aantal clients 5 GHz
-    wps_pairing: WPS pairing
-    start: Start
-    radio: Radio
-    wireless_mode_2g: 2.4 GHz wireless mode
-    bandwidth_2g: 2.4 GHz bandwidth
-    channel_2g: 2.4 GHz channel
-    wireless_mode_5g: 5 GHz wireless mode
-    bandwidth_5g: 5 GHz bandwidth
-    channel_5g: 5 GHz channel
-    auto_select_channel: Auto select channel
+    # common API messages
+    success: Updated successfully.
+    error: Update failed. Please try again.
+  
+    # navigation
+    nav:
+      dashboard: Dashboard
+      internet_link: Internet Verbinding
+      local_network: Lokaal netwerk
+      security: Beveiliging
+      wifi: Wi-Fi
+      phone: Telefoon
+      modem_settings: Modem instellingen
+      internet_connection: Internet verbinding
+      internet_connection_status: Verbonden met het internet via
+      internet_ip_address: "Uw modem is verbonden met het internet op het publieke IP adres:"
+      internet_last_change: "De internetverbinding is actief gedurende:"
+      this_modem: Dit modem
+      info_about_device: Hier staan gegevens over dit apparaat
+      firmware_version: "De firmware versie is:"
     
-    guest_wifi_description: |
-      Op deze pagina pas je de instellingen van je gast Wi-Fi netwerk aan. Het gast Wi-Fi netwerk kan je gebruiken om je gasten toegang tot het internet te geven. Gasten op dit netwerk hebben geen toegang tot uw eigen apparaten op het hoofd netwerk.
+    home:
+      wifi_network_active: Uw Wi-Fi netwerk is actief
+      qr_code_instruction: Scan deze QR code om te verbinden met je hoofd	Wi-Fi netwerk.
+      wifi_name_ssid: Wi-Fi naam (SSID)
+      wifi_password: Wi-Fi wachtwoord
+      internet_connection: Internet verbinding
+      internet_connection_type: Verbonden met het internet via
+      internet_ip_address: "Uw modem is verbonden met het internet op het publieke IP adres:"
+      internet_last_change: "De internetverbinding is actief gedurende:"
+      this_modem: Dit modem
+      info_about_device: Hier staan gegevens over dit apparaat
+      model_name: "Het apparaat type is:"
+      serial_number: "Het serienummer is:"
+      firmware_version: "De firmware versie is:"
       
-      Scan deze QR code om te verbinden met je gast Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan je gasten als ze met je Wi-Fi willen verbinden.
+  
+    dashboard:
+      information:
+        model_name: Model naam
+        product_class: Model type
+        serial_number: Serial Number
+        hardware_version: Hardware versie
+        software_version: Software versie
+        bootloader_version: Bootloader versie
+        uptime: Tijd actief
+        base_mac: Wan MAC adres
+        base_ip: Internet IP adres
+      time:
+        date_time: Huidige datum en tijd
+    login:
+      welcome: Welkom
+      error: Unable to login
+  
+    # local network tabs
+    local_network:
+      topology: Topology
+      connected_devices: Verbonden apparaten
+      dhcp: DHCP
+      reserved_ip: Gereserveerd IP
+      dyndns: DynDNS
+      ipv6: IPv6
+      arp_table: ARP tabel
+      usage: Gebruik
+      dhcp_server: DHCP server
+      subnet_mask: Subnetmasker
+      pool_start: Pool start IPv4
+      pool_end: Pool end IPv4
+      lease_time_minutes: Lease time in minutes
+      dhcp_leases: DHCP leases
+      dns_server: DNS server
+      dyndns_description: |
+        Op deze pagina kunt u de DynDNS service instellen. Met deze service geeft u een domein-, of hostnaam aan een statisch of dynamisch IP adres binnen uw lokale netwerk. Het apparaat met dit IP adres is vervolgens bereikbaar via deze domein-, of hostnaam. 
+        
+        Gebruik een van de ondersteunde DynDNS services.
+      dyndns_service: DynDNS service
+      dyndns_host: Host- of domeinnaam
+      dyndns_email: Email of gebruikersnaam
+      remaining_time: Remaining time
+      restore_dhcp: Herstel DHCP configuratie
+  
+    # wifi tabs
+    wifi:
+      main: Hoofd
+      settings: Instellingen
+      wifi_mesh: Wi-Fi Mesh
+      guest_wifi: Gast Wi-Fi
+      extra_wifi: Extra Wi-Fi
+      schema: Schema
+      spectrum: Spectrum
+      usage: Gebruik
+      settings_description: |
+        Op deze pagina pas je de instellingen van je hoofd Wi-Fi netwerk aan. Je kan hier ook de instellingen van de Wi-Fi radio aanpassen. De radio instellingen hebben ook effect op andere Wi-Fi netwerken (zoals het gast netwerk of extra Wi-Fi netwerk).
+        
+        Scan deze QR code om te verbinden met je Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+        
+        Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+      main_wifi: Hoofd Wi-Fi
+      name_ssid: Wi-Fi naam (SSID)
+      password: Wi-Fi wachtwoord
+      visibility: Zichtbaarheid
+      encryption_type: Encryptie type
+      max_clients: Maximaal aantal clients
+      max_clients_2g: Maximaal aantal clients 2.4 GHz
+      max_clients_5g: Maximaal aantal clients 5 GHz
+      wps_pairing: WPS pairing
+      start: Start
+      radio: Radio
+      wireless_mode_2g: 2.4 GHz wireless mode
+      bandwidth_2g: 2.4 GHz bandwidth
+      channel_2g: 2.4 GHz channel
+      wireless_mode_5g: 5 GHz wireless mode
+      bandwidth_5g: 5 GHz bandwidth
+      channel_5g: 5 GHz channel
+      auto_select_channel: Auto select channel
       
-      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
-    airtime_percentage: Airtime percentage t.o.v. hoofd netwerk
-    guest_client_timebox: Gast client timebox (min)
-    
-    extra_wifi_description_2g: |
-      Op deze pagina pas je de instellingen van je extra Wi-Fi netwerken aan. De twee verschillende radio bandbreedtes (2.4 GHz en 5 GHz) zijn hier gescheiden in twee losse netwerken. Deze losse netwerken kun je bijvoorbeeld gebruiken voor apparaten die alleen op 2.4 GHz functioneren.
+      guest_wifi_description: |
+        Op deze pagina pas je de instellingen van je gast Wi-Fi netwerk aan. Het gast Wi-Fi netwerk kan je gebruiken om je gasten toegang tot het internet te geven. Gasten op dit netwerk hebben geen toegang tot uw eigen apparaten op het hoofd netwerk.
+        
+        Scan deze QR code om te verbinden met je gast Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan je gasten als ze met je Wi-Fi willen verbinden.
+        
+        Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+      airtime_percentage: Airtime percentage t.o.v. hoofd netwerk
+      guest_client_timebox: Gast client timebox (min)
       
-      Scan deze QR code om te verbinden met je 2.4 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+      extra_wifi_description_2g: |
+        Op deze pagina pas je de instellingen van je extra Wi-Fi netwerken aan. De twee verschillende radio bandbreedtes (2.4 GHz en 5 GHz) zijn hier gescheiden in twee losse netwerken. Deze losse netwerken kun je bijvoorbeeld gebruiken voor apparaten die alleen op 2.4 GHz functioneren.
+        
+        Scan deze QR code om te verbinden met je 2.4 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+        
+        Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+      extra_wifi_2g: Extra Wi-Fi 2.4 GHz
+      extra_wifi_5g: Extra Wi-Fi 5 GHz
+      extra_wifi_description_5g: |
+        Scan deze QR code om te verbinden met je 5 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+        
+        Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
+      availability_2g: 2.4 GHz availability
+      availability_5g: 5 GHz availability
+      pairing_in_progress: Pairing in progress...
       
-      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
-    extra_wifi_2g: Extra Wi-Fi 2.4 GHz
-    extra_wifi_5g: Extra Wi-Fi 5 GHz
-    extra_wifi_description_5g: |
-      Scan deze QR code om te verbinden met je 5 GHz Extra Wi-Fi netwerk. Je kunt de code ook printen, door erop te klikken. Dan kun je deze laten zien aan mensen als ze met je Wi-Fi willen verbinden.
+    # security tabs
+    security:
+      firewall: Firewall
+      device_block: Apparaat blokkade
+      port_forwarding: Port forwarding
+      upnp: UPnP
+      dmz: DMZ
+      firewall_description: |
+        Op deze pagina kunt u het niveau van uw firewall instellen. De firewall is een beveiling tussen het netwerk in uw huis en het internet. Het beschermt dus ook de apparaten die op uw netwerk thuis verbonden zijn van het internet.
       
-      Let op! Als je de naam (SSID) of het wachtwoord van je Wi-Fi netwerk verandert, zal er een andere QR code worden gegenereerd. Deze zul je dan op nieuw moeten scannen.
-    availability_2g: 2.4 GHz availability
-    availability_5g: 5 GHz availability
-    pairing_in_progress: Pairing in progress...
-    
-  # security tabs
-  security:
-    firewall: Firewall
-    device_block: Apparaat blokkade
-    port_forwarding: Port forwarding
-    upnp: UPnP
-    dmz: DMZ
-    firewall_description: |
-      Op deze pagina kunt u het niveau van uw firewall instellen. De firewall is een beveiling tussen het netwerk in uw huis en het internet. Het beschermt dus ook de apparaten die op uw netwerk thuis verbonden zijn van het internet.
-    
-      Afhankelijk van het niveau dat u instelt, zullen uw apparaten beter beveiligd zijn van het internet. Een betere beveiliging zal ook beperkingen met zich mee brengen in het internet gebruik.
-    firewall_level: Firewall niveau
-    firewall_level_low: Low
-    firewall_level_medium: Medium
-    firewall_level_high: High
-    firewall_level_custom: Custom
-    firewall_level_description: |
-      Firewall niveau medium: deze instelling blokeert alle inkomende connecties. Alle uitgaande connecties zijn wel toegestaan, met uitzondering van NetBIOS services. Met deze services kunnen apparaten in uw lokale netwerk met elkaar communiceren. Het is dus niet noodzakelijk voor deze service om met het internet te communiceren.
-    allow_ping: Modem reageert op pings
-    open_ports_ipv6: Open ports in the firewall (for IPv6)
-    open_port: Open port
-
-  # modem management tabs
-  modem:
-    information: Informatie
-    admin_password: Admin wachtwoord
-    time_ntp: Tijd (NTP)
-    time: Tijd
-    remote_help: Hulp op afstand
-    backup: Backup
-    system: Systeem
-    performance_charts: Prestatie grafieken
-    current_date_time: Huidige datum en tijd
-    change_admin_password: Admin wachtwoord veranderen
-    admin_password_description: |
-      Op deze pagina kunt u het wachtwoord van het modem opnieuw instellen. Let op: dit is niet het wachtwoord van uw Wi-Fi signaal. Dit wachtwoord gebruikt u om in te loggen in deze app.
-    current_password: Huidig wachtwoord
-    new_password: Nieuw wachtwoord
-    confirm_new_password: Nieuw wachtwoord herhalen
-    invalid_password: Invalid password
-    system_description: Heb je een probleem met tv, bellen, internet of wifi? Los dit op door KPN Box (modem) te herstarten of te resetten. Probeer altijd eerst je modem (Experia Box) opnieuw op te starten. Bij resetten vervallen alle persoonlijke instellingen.
-    system_reboot_description: Herstart uw modem
-    system_reboot: Herstart
-    system_reset_description: Reset uw modem
-    system_reset: Reset
+        Afhankelijk van het niveau dat u instelt, zullen uw apparaten beter beveiligd zijn van het internet. Een betere beveiliging zal ook beperkingen met zich mee brengen in het internet gebruik.
+      firewall_level: Firewall niveau
+      firewall_level_low: Low
+      firewall_level_medium: Medium
+      firewall_level_high: High
+      firewall_level_custom: Custom
+      firewall_level_description: |
+        Firewall niveau medium: deze instelling blokeert alle inkomende connecties. Alle uitgaande connecties zijn wel toegestaan, met uitzondering van NetBIOS services. Met deze services kunnen apparaten in uw lokale netwerk met elkaar communiceren. Het is dus niet noodzakelijk voor deze service om met het internet te communiceren.
+      allow_ping: Modem reageert op pings
+      open_ports_ipv6: Open ports in the firewall (for IPv6)
+      open_port: Open port
+  
+    # modem management tabs
+    modem:
+      information: Informatie
+      admin_password: Admin wachtwoord
+      time_ntp: Tijd (NTP)
+      time: Tijd
+      remote_help: Hulp op afstand
+      backup: Backup
+      system: Systeem
+      performance_charts: Prestatie grafieken
+      current_date_time: Huidige datum en tijd
+      change_admin_password: Admin wachtwoord veranderen
+      admin_password_description: |
+        Op deze pagina kunt u het wachtwoord van het modem opnieuw instellen. Let op: dit is niet het wachtwoord van uw Wi-Fi signaal. Dit wachtwoord gebruikt u om in te loggen in deze app.
+      current_password: Huidig wachtwoord
+      new_password: Nieuw wachtwoord
+      confirm_new_password: Nieuw wachtwoord herhalen
+      invalid_password: Invalid password
+      system_description: Heb je een probleem met tv, bellen, internet of wifi? Los dit op door KPN Box (modem) te herstarten of te resetten. Probeer altijd eerst je modem (Experia Box) opnieuw op te starten. Bij resetten vervallen alle persoonlijke instellingen.
+      system_reboot_description: Herstart uw modem
+      system_reboot: Herstart
+      system_reset_description: Reset uw modem
+      system_reset: Reset
+  
