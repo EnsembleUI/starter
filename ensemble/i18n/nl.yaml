@@ -186,18 +186,10 @@ kpn:
     firewall_level_medium: Medium
     firewall_level_high: Hoog
     firewall_level_custom: Aangepast
-    firewall_level_description: |
-      Firewall niveau laag:
-      Met deze instelling blokkeert de firewall geen enkele inkomende verbinding. Let er wel op dat het noodzakelijk is om gebruik te maken van UPnP IGP of Port Forwarding regels voor succesvolle inkomende verbindingen naar de apparaten in je lokale netwerk. Gebruik deze instelling alleen als u een geavanceerde gebruiker bent die bewust is van de consequenties en veiligheidsrisico’s.
-
-      Firewall niveau medium:
-      Met deze instelling blokkeert de firewall alle inkomende verbindingen. Alle uitgaande verbindingen zijn wel toegestaan, met uitzondering van NetBIOS services. Met deze services kunnen apparaten in uw lokale netwerk met elkaar communiceren. Het is dus niet noodzakelijk voor deze service om met het internet te communiceren en wordt om deze reden geblokkeerd.
-
-      Firewall niveau hoog:
-      Met deze instelling blokkeert de firewall alle inkomende verbindingen. Van alle uitgaande verbindingen worden alleen de standaard internet applicaties (Web, emails, nieuws) toegestaan. Dit niveau limiteert TV tot live kanalen, hierdoor zijn TV en Video On Demand niet te gebruiken. Sommige applicaties, zoals games of peer to peer, die gebaseerd zijn op inkomende verbindingen, zullen niet werken.
-
-      Firewall niveau aangepast:
-      Met deze instelling kunt u eigen filter regels aanpassen en instellen. Gebruik deze instelling alleen als u een geavanceerde gebruiker bent die bewust is van de consequenties en veiligheidsrisico’s.
+    firewall_level_description_low: Met deze instelling blokkeert de firewall geen enkele inkomende verbinding. Let er wel op dat het noodzakelijk is om gebruik te maken van UPnP IGP of Port Forwarding regels voor succesvolle inkomende verbindingen naar de apparaten in je lokale netwerk. Gebruik deze instelling alleen als u een geavanceerde gebruiker bent die bewust is van de consequenties en veiligheidsrisico’s.
+    firewall_level_description_medium: Met deze instelling blokkeert de firewall alle inkomende verbindingen. Alle uitgaande verbindingen zijn wel toegestaan, met uitzondering van NetBIOS services. Met deze services kunnen apparaten in uw lokale netwerk met elkaar communiceren. Het is dus niet noodzakelijk voor deze service om met het internet te communiceren en wordt om deze reden geblokkeerd.
+    firewall_level_description_high: Met deze instelling blokkeert de firewall alle inkomende verbindingen. Van alle uitgaande verbindingen worden alleen de standaard internet applicaties (Web, emails, nieuws) toegestaan. Dit niveau limiteert TV tot live kanalen, hierdoor zijn TV en Video On Demand niet te gebruiken. Sommige applicaties, zoals games of peer to peer, die gebaseerd zijn op inkomende verbindingen, zullen niet werken.
+    firewall_level_description_custom: Met deze instelling kunt u eigen filter regels aanpassen en instellen. Gebruik deze instelling alleen als u een geavanceerde gebruiker bent die bewust is van de consequenties en veiligheidsrisico’s.
     allow_ping: Modem reageert op pings
     open_ports_ipv6: Open poorten in de firewall (voor IPv6)
     open_port: Open poort
