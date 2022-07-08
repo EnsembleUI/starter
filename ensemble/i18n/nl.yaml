@@ -51,7 +51,8 @@ kpn:
     firmware_version: "De firmware versie is:"
   
   home:
-    wifi_network_active: Uw Wi-Fi netwerk is actief
+    wifi_active: Uw Wi-Fi netwerk is actief
+    wifi_inactive: Uw Wi-Fi netwerk is inactief
     qr_code_instruction: Scan deze QR code om te verbinden met je hoofd	Wi-Fi netwerk.
     wifi_name_ssid: Wi-Fi naam (SSID)
     wifi_password: Wi-Fi wachtwoord
