@@ -34,6 +34,11 @@ definitions:
     # this is the Ensemble server URL. Do not change
     path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
     # appId can be found on Ensemble Studio.
+    # mastercard appId: e74abf50-6177-456f-8556-0f01e5235860
+    # kitchen appId: e24402cb-75e2-404c-866c-29e6c3dd7992
+    #kpn
     appId: 40dcdbe9-1ac3-4aab-8ee2-0bcdd2f1ca7b
+    #appId: 40dcdbe9-1ac3-4aab-8ee2-0bcdd2f1ca7b
     i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
+    enableCache: true
     # i18nPath: https://d1x5t4jfwtkdjl.cloudfront.net/web/assets/assets/i18n
