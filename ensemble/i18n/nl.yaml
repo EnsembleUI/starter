@@ -15,12 +15,16 @@ kpn:
   restore: Herstellen
   modify: Aanpassen
   add: Toevoegen
+  activate: Activeren
+  protocol: Protocol
   device: Apparaat
+  port: Poort
   mac_address: MAC adres
   host_name: Hostnaam
   ip_address: IP adres
   ip4_address: IPv4 adres
   ip6_address: IPv6 adres
+  subnet_mask: Subnet masker
   apply: Toepassen
   password: Wachtwoord
   sign_in: Inloggen
@@ -95,7 +99,6 @@ kpn:
     arp_table: ARP tabel
     usage: Gebruik
     dhcp_server: DHCP server
-    subnet_mask: Subnet masker
     pool_start: Pool start IPv4
     pool_end: Pool einde IPv4
     lease_time_minutes: Lease time in minutes
@@ -194,6 +197,17 @@ kpn:
     allow_ping: Modem reageert op pings
     open_ports_ipv6: Open poorten in de firewall (voor IPv6)
     open_port: Open poort
+    port_forwarding_description: |
+      Op deze pagina kunt u port forwarding regels inschakelen. Hiermee kunt u al het verkeer dat gebruik maakt van bepaalde poorten automatisch doorschakelen naar een van de apparaten in uw lokale netwerk. Voor zowel IPv4 als IPv6 dient u losse port forwarding regels in te stellen.
+
+      Port forwarding regels kunt u bijvoorbeeld gebruiken wanneer u een server host dat gebruik maakt van een poort. Dit apparaat zal over deze poort vervolgens toegankelijk zijn voor het internet.
+                
+      U begint met het bepalen van de service. Er is een lijst beschikbaar met services waaruit u kan kiezen. U kunt zelf ook een eigen service bepalen. In dat geval zult u zelf moeten invoeren van welke poort(en) deze service gebruik maakt.
+    service: Service
+    source_ip: "Interne host: IP adres"
+    destination_ip: "Externe host: IP adres"
+    source_port: "Interne poort"
+    destination_port: "Externe poort"
 
   # modem management tabs
   modem:
