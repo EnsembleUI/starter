@@ -61,8 +61,8 @@ kpn:
     wifi_name_ssid: Wi-Fi naam (SSID)
     wifi_password: Wi-Fi wachtwoord
     internet_connection: Internet verbinding
-    acitive_connection_type: Verbonden met het internet via
-    inacitive_connection_type: Geen verbinding met het internet controleer de WAN aansluiting op uw modem
+    active_connection_type: Verbonden met het internet via
+    inactive_connection_type: Geen verbinding met het internet controleer de WAN aansluiting op uw modem
     internet_ip_address: "Uw modem is verbonden met het internet op het publieke IP adres:"
     internet_last_change: "De internetverbinding is actief gedurende:"
     this_modem: Dit modem
