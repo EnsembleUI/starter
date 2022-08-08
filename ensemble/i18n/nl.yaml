@@ -89,6 +89,19 @@ kpn:
     welcome: Welkom
     error: Het inloggen is mislukt
 
+
+  internet_link:
+    info: Informatie
+    speed: Snelheid
+    internet_usage: Internet gebruik
+    trace_route: Trace route
+    4g_backu: 4G backup
+    vpn: VPN
+    ipv6: IPv6
+    ipv6_description: |
+      Op deze pagina kunt u het gebruik van IPv6 aan- en uitzetten. IPv6 zal automatisch worden geactiveerd wanneer dit beschikbaar is. Het wordt niet ingeschakeld wanneer het niet beschikbaar is. In dat geval zal de router alleen gebruik maken van IPv4.
+          
+
   # local network tabs
   local_network:
     topology: Topology
@@ -114,6 +127,9 @@ kpn:
     dyndns_email: Email of gebruikersnaam
     remaining_time: Resterende tijd
     restore_dhcp: Herstel DHCP configuratie
+    reserved_ip_description: |
+      Op deze pagina kunt u een IP adres reserveren voor een specifiek apparaat. Daarmee zal dit apparaat altijd hetzelfde IP adres aangewezen krijgen. Een apparaat aanwijzen gebeurt op basis van het unieke MAC adres. U kunt een verbonden apparaat uit de lijst kiezen, of zelf het MAC adres van een apparaat invoeren.
+    main_network: Hoofdnetwerk
 
   # wifi tabs
   wifi:
