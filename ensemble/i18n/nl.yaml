@@ -15,6 +15,7 @@ kpn:
   restore: Herstellen
   modify: Aanpassen
   add: Toevoegen
+  start: Start
   activate: Activeren
   protocol: Protocol
   device: Apparaat
@@ -31,6 +32,8 @@ kpn:
   logout: Uitloggen
   status: Status
   user_name: Gebruikersnaam
+  enabled: Enabled
+  disabled: Disabled
   screen_unavailable: Dit scherm is niet beschikbaar
 
   # common API messages
@@ -94,8 +97,7 @@ kpn:
     info: Informatie
     speed: Snelheid
     internet_usage: Internet gebruik
-    trace_route: Trace route
-    4g_backu: 4G backup
+    4g_backup: 4G backup
     vpn: VPN
     ipv6: IPv6
     ipv6_description: |
@@ -126,6 +128,17 @@ kpn:
     packages: Pakketten
     errors: Errors
     lost_packages: Weggevallen pakketten
+    
+    # Trace route
+    trace_route: Trace route
+    trace_route_description: |
+      Met de functie trace route kunt u traceren welke route IP-paketten afleggen tot ze een bepaalde host bereiken. Met deze functie kunt u makkelijk onderzoek doen wanneer u een website niet kan bereiken. Met het resultaat kan u concluderen op welk moment er wat mis gaat in de verbinding. Met de trace route functie wordt elke stap in het netwerk weergegeven. Met de ping functie, krijgt u alleen gegevens over het bereiken van het eindpunt.
+
+      De response tijd geeft per stap aan hoe lang het pakket heeft gedaan over elke stap. Er worden meerdere response tijden gegeven als er meerdere pogingen worden gedaan.
+      
+      Let er op dat bij de trace route functie, niet altijd alle servers in elke stap een response geven op trace route. Dat betekent niet dat het bericht niet wordt doorgegeven aan de server van de volgende stap. Dit is dus normaal gedrag. Hierdoor zullen sommige stappen geen informatie bevatten.
+    trace_or_ping_route: Route traceren of pingen
+
 
   # local network tabs
   local_network:
@@ -155,6 +168,9 @@ kpn:
     reserved_ip_description: |
       Op deze pagina kunt u een IP adres reserveren voor een specifiek apparaat. Daarmee zal dit apparaat altijd hetzelfde IP adres aangewezen krijgen. Een apparaat aanwijzen gebeurt op basis van het unieke MAC adres. U kunt een verbonden apparaat uit de lijst kiezen, of zelf het MAC adres van een apparaat invoeren.
     main_network: Hoofdnetwerk
+    ipv6_description: Op deze pagina kunt u bepalen of u prefix delegation aan of uit zet.
+    ipv6_prefix_delegation: IPv6 prefix delegation
+    enabled_with_dhcp: Aan met DHCPv6
 
   # wifi tabs
   wifi:
@@ -181,7 +197,6 @@ kpn:
     max_clients_2g: Maximaal aantal clients 2.4 GHz
     max_clients_5g: Maximaal aantal clients 5 GHz
     wps_pairing: WPS pairing
-    start: Start
     radio: Radio
     wireless_mode_2g: 2.4 GHz wireless mode
     bandwidth_2g: 2.4 GHz bandbreedte
