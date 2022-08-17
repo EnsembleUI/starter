@@ -109,6 +109,8 @@ kpn:
     ppp_status: PPP status
     ppp_status_up: Up
     ppp_status_down: Down
+    ppp_keep_alive_time: PPP Keep alive tijd tussen echo verzoek
+    ppp_keep_alive_echo: PPP Keep alive aantal echo herkansingen
     mtu: MTU
     standard_gw_address: Standaard gateway adres
     ip_version: IP versie
