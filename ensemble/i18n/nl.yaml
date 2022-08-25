@@ -79,7 +79,9 @@ kpn:
     4g_dongle: 4G Dongle
     4g_dongle_on: KPN TO ADD
     4g_dongle_off: Er is geen verbonden 4G USB dongle aanwezig in het modem.
-    
+    phone: Telefoon
+    phone_on: Uw telefoonnummers zijn geregistreerd en actief.
+    phone_off: Uw telefoonnummers zijn geregistreerd en inactief.
 
   dashboard:
     information:
