@@ -128,17 +128,24 @@ kpn:
     public_address_ipv6: Publieke adres IPv6 (GUA)
     local_address_ipv6: Link Local IPv6 (LLA)
     delegated_prefix: Delegated prefix
-    primary_dns_ipv6: Primaire DNS IPv4
-    secondary_dns_ipv6: Secundaire DNS IPv4
+    primary_dns_ipv6: Primaire DNS IPv6
+    secondary_dns_ipv6: Secundaire DNS IPv6
     internet_usage_description: Op deze pagina vindt u informatie over het internet gebruik van uw modem. Dit gaat dus enkel over het verkeer tussen het modem en het internet. Het gaat niet over het verkeer binnen uw lokale netwerk.
     dsl_internet: DSL / Ethernet
     wan_connection_type: WAN connectie type
-    sent_received: Verzonden / Ontvangen
+    sent: Verzonden
+    received: Ontvangen
     data: Data
     packages: Pakketten
     errors: Errors
     lost_packages: Weggevallen pakketten
-    
+    ip_laag: IP laag
+    ppp_data: PPP Data
+    ip_data: IP Data
+    ip_iptv: IP IPTV Data
+    ip_bridge_guest: IP Bridge gast
+    ip_usb: IP USB
+
     # Trace route
     trace_route: Trace route
     trace_route_description: |
@@ -275,6 +282,7 @@ kpn:
     destination_ip: "Externe host: IP adres"
     source_port: "Interne poort"
     destination_port: "Externe poort"
+    action:
 
   # modem management tabs
   modem:
