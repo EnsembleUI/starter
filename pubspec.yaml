@@ -71,7 +71,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
     - ensemble/
     # unfortunately we have to list *all* Apps directories here. It's a Flutter requirement
     - ensemble/apps/helloApp/

@@ -1,28 +1,29 @@
-import 'package:ensemble/ensemble_home.dart';
-import 'package:ensemble/ensemble.dart';
-import 'package:ensemble/util/utils.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_i18n/flutter_i18n.dart';
+import 'dart:ui';
 
+import 'package:ensemble/ensemble_app.dart';
+import 'package:ensemble/framework/error_handling.dart';
+import 'package:flutter/material.dart';
+
+/// this demonstrates an App running exclusively with Ensemble
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Ensemble().initialize();
-  runApp(const Home());
+  initErrorHandler();
+  runApp(const EnsembleApp());
 }
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        navigatorKey: Utils.globalAppKey,
-        localizationsDelegates: [
-          Ensemble().definitionProvider!.getI18NDelegate(),
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate
-        ],home: const EnsembleHome(),
-        theme: Ensemble().getAppTheme(),
-        builder: FlutterI18n.rootAppBuilder(),
-    );
-  }
+
+void initErrorHandler() {
+  /// print errors on console and Chrome dev tool (for Web)
+  FlutterError.onError = (details) {
+    if (details.exception is EnsembleError) {
+      debugPrint(details.exception.toString());
+    } else {
+      debugPrint(details.exception.toString());
+    }
+  };
+
+  // async error
+  PlatformDispatcher.instance.onError = (error, stack) {
+    debugPrint("Async Error: " + error.toString());
+    return true;
+  };
 }

@@ -7,7 +7,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 /// demonstrating Ensemble integration with your existing Flutter App
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Ensemble().initialize();
+
+  // (optional) pre-initialize asynchronously so Ensemble is ready
+  // when your app switches to Ensemble screens. Add `await` before
+  // this statement if your first page is an Ensemble's page.
+  Ensemble().initialize();
+
   runApp(const MyApp());
 }
 
@@ -16,16 +21,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      navigatorKey: Utils.globalAppKey,
-      localizationsDelegates: [
-        Ensemble().definitionProvider!.getI18NDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
-      ],
-      builder: FlutterI18n.rootAppBuilder(),
-      theme: Ensemble().getAppTheme(),
-      home: const MyHomePage(title: 'My Existing App'),
+    return const MaterialApp(
+      home: MyHomePage(title: 'My Existing Flutter App'),
     );
   }
 }
@@ -41,24 +38,22 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   @override
-  void initState() {
-    super.initState();
-
-    // Ensemble will auto-initialize once upon loading the first page.
-    // However you can pre-initialize to make the first page load faster
-    //Ensemble().initialize(context);
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: const Text("Load Ensemble Page"),
-          onPressed: () => loadEnsemblePage(context),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('This page is written in Flutter'),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              child: const Text("Now load an Ensemble page"),
+              onPressed: () => loadEnsemblePage(context),
+            )
+          ],
         )
       )
     );
@@ -66,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void loadEnsemblePage(BuildContext context) {
     // Navigating to the home page of the configured App
-    Ensemble().navigateApp(context);
+    Ensemble().navigateApp(context, asModal: true);
 
     // navigate to a specific screen using ID or name
     //Ensemble().navigateApp(context, screenName: 'Goodbye');

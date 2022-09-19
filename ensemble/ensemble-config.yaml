@@ -2,14 +2,6 @@ definitions:
   # where your page definitions are hosted ('local', 'remote' or 'ensemble')
   from: ensemble
 
-  i18n:
-    #locale string e.g. en, nl etc. If empty, user's device locale is used
-    defaultLocale: nl
-    #if strings in defaultLocale are not found, which locale to use instead
-    fallbackLocale: en
-    #use country code after locale code such as en_us
-    useCountryCode: false
-
   # for embedding definitions locally in your Flutter App
   local:
     # the root directory where all your Apps definitions reside
@@ -34,8 +26,18 @@ definitions:
     # this is the Ensemble server URL. Do not change
     path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
     # appId can be found on Ensemble Studio.
-    # kitchen-sink appId: e24402cb-75e2-404c-866c-29e6c3dd7992
-    appId: 40dcdbe9-1ac3-4aab-8ee2-0bcdd2f1ca7b
+    appId:
     i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
     enableCache: false
-    # i18nPath: https://d1x5t4jfwtkdjl.cloudfront.net/web/assets/assets/i18n
+
+i18n:
+  #locale string e.g. en, nl etc. If empty, user's device locale is used
+  defaultLocale: nl
+  #if strings in defaultLocale are not found, which locale to use instead
+  fallbackLocale: en
+  #use country code after locale code such as en_us
+  useCountryCode: false
+
+accounts:
+  maps:
+    mapbox_access_token: pk.eyJ1IjoiZW5zZW1ibGV1aSIsImEiOiJjbDVsYTNoeDQwaGQwM21udzhyemR3cDJrIn0.dnn3x8nZVj5ZFO3tn5l8Ww
