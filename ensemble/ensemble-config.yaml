@@ -1,6 +1,6 @@
 definitions:
   # where your page definitions are hosted ('local', 'remote' or 'ensemble')
-  from: ensemble
+  from: legacy
 
   # for embedding definitions locally in your Flutter App
   local:
@@ -23,6 +23,12 @@ definitions:
 
   # for Ensemble-hosted definitions, simply enter your Ensemble's app key
   ensemble:
+    # appId can be found on Ensemble Studio.
+    appId: <your_app_id>
+    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
+
+  # for legacy Ensemble-hosted definitions, simply enter your Ensemble's app key
+  legacy:
     # this is the Ensemble server URL. Do not change
     path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
     # appId can be found on Ensemble Studio.
