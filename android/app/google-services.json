@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "326748243798",
+    "firebase_url": "https://ensemble-web-studio-default-rtdb.firebaseio.com",
+    "project_id": "ensemble-web-studio",
+    "storage_bucket": "ensemble-web-studio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326748243798:android:7b2979a8fdc1085594b8f7",
+        "android_client_info": {
+          "package_name": "com.ensembleui.ensemble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326748243798-1mm73016h1qo2u2ca0jcjrnqjdeqn1l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUCmUd2Dh-pw_D4k869Dx62QGUkgNhkIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326748243798-1mm73016h1qo2u2ca0jcjrnqjdeqn1l0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326748243798-f5n6p87r6optmgkgpblb6a8mhh7efimg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ensembleui.ensemble"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326748243798:android:618853522b9be2f094b8f7",
+        "android_client_info": {
+          "package_name": "com.example.gtk_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326748243798-1mm73016h1qo2u2ca0jcjrnqjdeqn1l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUCmUd2Dh-pw_D4k869Dx62QGUkgNhkIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326748243798-1mm73016h1qo2u2ca0jcjrnqjdeqn1l0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326748243798-f5n6p87r6optmgkgpblb6a8mhh7efimg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ensembleui.ensemble"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
