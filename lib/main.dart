@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initErrorHandler();
-  runApp(const EnsembleApp());
+  runApp(EnsembleApp());
 }
 
 void initErrorHandler() {
