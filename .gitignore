@@ -56,8 +56,11 @@ Podfile.lock
 ios/Runner.xcodeproj
 ios/Runner/Assets.xcassets
 ios/Runner.xcworkspace
-macos
 ios/Runner/Base.lproj
 ios/Runner
 MainActivity.kt
 .metadata
+AppInfo.xcconfig
+contents.xcworkspacedata
+project.pbxproj
+GeneratedPluginRegistrant.swift

@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void loadEnsemblePage(BuildContext context) {
     // Navigating to the home page of the configured App
-    Ensemble().navigateApp(context, asModal: true);
+    Ensemble().navigateApp(context);
 
     // navigate to a specific screen using ID or name
     //Ensemble().navigateApp(context, screenName: 'Goodbye');
