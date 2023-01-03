@@ -24,7 +24,7 @@ definitions:
   # for Ensemble-hosted definitions, simply enter your Ensemble's app key
   ensemble:
     # appId can be found on Ensemble Studio.
-    appId: <my app id>
+    appId: <my app id on studio.ensembleui.com>
     i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
 
   # for legacy Ensemble-hosted definitions, simply enter your Ensemble's app key
@@ -47,3 +47,13 @@ i18n:
 accounts:
   maps:
     mapbox_access_token: pk.eyJ1IjoiZW5zZW1ibGV1aSIsImEiOiJjbDVsYTNoeDQwaGQwM21udzhyemR3cDJrIn0.dnn3x8nZVj5ZFO3tn5l8Ww
+
+# override any environment variables on studio.ensembleui.com here
+# e.g. load local assets instead of URL
+environmentVariables:
+  # Environment variables can have any value you want and are referenced by {env.myVariable}.
+  # Here we use it to demonstrate loading assets locally, overriding the environment variables
+  # defined in your App on studio.ensembleui.com.
+  # This asset value is empty, meaning a reference of {env.exampleAssetVariable}pic.png
+  # will be loaded locally from /ensemble/assets/pic.png
+  exampleAssetVariable:
