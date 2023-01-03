@@ -27,15 +27,6 @@ definitions:
     appId: <my app id on studio.ensembleui.com>
     i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
 
-  # for legacy Ensemble-hosted definitions, simply enter your Ensemble's app key
-  legacy:
-    # this is the Ensemble server URL. Do not change
-    path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
-    # appId can be found on Ensemble Studio.
-    appId: <my app id>
-    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
-    enableCache: false
-
 i18n:
   #locale string e.g. en, nl etc. If empty, user's device locale is used
   defaultLocale: nl
