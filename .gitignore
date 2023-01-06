@@ -51,7 +51,6 @@ firebase.json
 lib/firebase_options.dart
 pubspec.lock
 .firebase
-android/app/src/main/res
 Podfile.lock
 ios/Runner.xcodeproj
 ios/Runner/Assets.xcassets
