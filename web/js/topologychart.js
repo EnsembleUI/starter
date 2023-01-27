@@ -5,7 +5,14 @@ function getObjectByName(n){
 function devicesTrigger(e){
     console.log(e)
 }
-
+function removeChart(id) {
+    var e = document.querySelectorAll('[id='+id+']');
+    if ( e && e.length > 0 ) {
+        for (var i = e.length-1; i >= 0 ; i--) {
+            e[i].remove();
+        }
+    }
+}
 function getDevicesElement(devicesInfo){
   const ul = document.createElement("ul")
 
