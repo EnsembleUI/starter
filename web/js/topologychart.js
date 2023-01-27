@@ -1,15 +1,3 @@
-//  Toggle mobile menu
-const toggleMenu = document.querySelector('.menu-bars');
-const mainMenu = document.querySelector('.header-menu');
-toggleMenu.addEventListener('click',function(){
-  this.classList.toggle('active');
-  mainMenu.classList.toggle('active');
-});
-
-
-
-
-
 function getObjectByName(n){
 
 }
@@ -78,8 +66,8 @@ function buildElement(parentId,info){
 
             <!-- Tab bottom content -->
             <div class="tab-bottom-content">
-               <p><span>${mainGateway.deviceCount}</span> gekoppelde appration in totall</p>
-               <span class="tab-element">Wi-Fi SSD neman: ${mainGateway.wifiName}</span>
+               <p><span>${mainGateway.deviceCount}</span> verbonden apparaten</p>
+               <span class="tab-element">Wifinaam: ${mainGateway.wifiName}</span>
                <span class="tab-element">${mainGateway.guestWifiName}</span>
             </div>
          </div>
@@ -150,7 +138,7 @@ function buildElement(parentId,info){
 
             div1.innerHTML = `
                <div class="tab-content-right">
-                  <p class="card-title">${info.devices.length} gekoppelde apparaten </p>
+                  <p class="card-title">${info.devices.length} verbonden apparaten </p>
                   <div class="tab-content-right">
                         <div class="tab-right-list">
                            ${devicesInfoEl.outerHTML}
@@ -166,8 +154,10 @@ function buildElement(parentId,info){
 }
 
 function activateEvent(){
-  document.querySelector(".close-icon").addEventListener("click", (e)=>{
-    e.target.parentElement.parentElement.remove()
-  })
+    var obj = document.querySelector(".close-icon");
+    if ( obj ) {
+      obj.addEventListener("click", (e)=>{
+        e.target.parentElement.parentElement.remove()
+      });
+  }
 }
-
