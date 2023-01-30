@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+  <script src="https://connect2.finicity.com/assets/sdk/finicity-connect.min.js"></script>
+</HEAD>
+<BODY>
+<script>
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+  var uri = getParameterByName('uri');
+  
+  function handleMessage(id,msg) {
+      if ( messageHandler ) {
+        messageHandler.postMessage(msg);
+      }
+    }
+   window.addEventListener("load", (event) => {
+     if ( !uri ) return;
+      window.finicityConnect.launch(uri, {
+        overlay: 'rgba(255,255,255, 0)',
+        success: (event) => {
+          console.log('Yay! User went through Connect', event);
+          event = {type:'success',data:event};
+          handleMessage('finicityConnect',JSON.stringify(event));
+        },
+         cancel: (event) => {
+          console.log('The user cancelled the iframe', event);
+          event = {type:'cancel',data:event};
+          handleMessage('finicityConnect',JSON.stringify(event));
+         },
+         error: (error) => {
+          console.error('Some runtime error was generated during insideConnect ', error);
+          event = {type:'error',data:error};
+          handleMessage('finicityConnect',JSON.stringify(error));
+         },
+         loaded: (event) => {
+          console.log('This gets called only once after the iframe has finished loading ');
+          event = {type:'loaded',data:event};
+          handleMessage('finicityConnect',JSON.stringify(event));
+         },
+         route: (event) => {
+          console.log('This is called as the user navigates through Connect ', event);
+          event = {type:'route',data:event};
+          handleMessage('finicityConnect',JSON.stringify(event));
+         },
+         user: (event) => {
+          console.log('This is called as the user interacts with Connect ', event);
+          event = {type:'user',data:event};
+          handleMessage('finicityConnect',JSON.stringify(event));
+         }
+        });
+        const finIFrame = document.getElementById("finicityConnectIframe");
+        if ( finIFrame ) {
+          finIFrame.style.left = '0px';
+          finIFrame.style.top = '34px';
+        }
+        });
+ </script>
+</BODY>
+</HTML>
