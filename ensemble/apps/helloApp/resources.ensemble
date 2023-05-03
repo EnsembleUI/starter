@@ -1,0 +1,11 @@
+Widgets:
+  MyCustomWidget1:
+    inputs:
+      - name
+    body:
+      Text:
+        text: Hello ${name} !
+  MyCustomWidget2:
+    body:
+      Text:
+        text: hello world

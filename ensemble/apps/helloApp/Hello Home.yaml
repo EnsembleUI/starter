@@ -1,12 +1,12 @@
 View:
-  type: Column
-  children:
-    - Text:
-        styles: { fontSize: 20 }
-        text: hello from Ensemble
-
-    - Button:
-        label: Go Somewhere in default language r@ensemblelive.gobtn
-        onTap:
-          action: navigateScreen
-          name: Goodbye
+  styles:
+    useSafeArea: true
+  body:
+    Column:
+      children:
+        - Text:
+            text: Welcome
+        # reference a widget defined in resources.ensemble
+        - MyCustomWidget1:
+            inputs:
+              name: Peter Parker

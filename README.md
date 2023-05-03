@@ -29,6 +29,11 @@ Note: the ability to execute Typescript code within your definition locally is n
 - Follow the same steps above to generate runtime and update dependencies. 
 - Try making changes to the definition. Upon re-run your screen should reflect the changes.
 
+### Concepts
+- Each YAML definition under your app folder represents a screen.
+- `theme.ensemble` allows you to make styling changes that are applicable to the entire app
+- `resources.ensemble` is where you can define you own custom widgets, visible across the entire app.
+
 ## Editing definitions
 Ensemble Studio includes an Online Editor for making changes with type-ahead support and enables Live Preview. However if you decide to host your own definitions, we include a JSON Schema to help with type-ahead for popular Editors.
 ### Android Studio
