@@ -56,7 +56,6 @@ ios/Runner.xcodeproj
 ios/Runner/Assets.xcassets
 ios/Runner.xcworkspace
 ios/Runner/Base.lproj
-ios/Runner
 .metadata
 AppInfo.xcconfig
 contents.xcworkspacedata

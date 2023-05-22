@@ -32,12 +32,6 @@ dependencies:
   flutter_localizations: # Add this line
     sdk: flutter
 
-  #i18n for Flutter
-  flutter_i18n:
-    git:
-      url: https://github.com/ilteoood/flutter_i18n.git
-      ref: master
-
   # embed Ensemble as a sibling project
   ensemble:
     git:
