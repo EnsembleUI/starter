@@ -61,3 +61,10 @@ AppInfo.xcconfig
 contents.xcworkspacedata
 project.pbxproj
 GeneratedPluginRegistrant.swift
+android/app/src/main/kotlin
+android/build.gradle
+android/gradle.properties
+android/settings.gradle
+android/app/src/debug
+android/app/src/profile
+gradle-wrapper.properties
