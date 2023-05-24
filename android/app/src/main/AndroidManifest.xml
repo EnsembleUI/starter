@@ -1,5 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
         android:label="ensemble_starter"
         android:name="${applicationName}"
@@ -31,9 +30,10 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
-        <!-- Default Ensemble Google Maps key. Replace with your own key here -->
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD8vwvoaEPEgYemp1EkIETetJMvyS4Ptqk"/>
+            android:value="${googleMapsAPIKey}"/>
+
+
 
     </application>
 </manifest>

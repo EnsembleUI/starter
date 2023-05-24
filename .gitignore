@@ -61,3 +61,4 @@ AppInfo.xcconfig
 contents.xcworkspacedata
 project.pbxproj
 GeneratedPluginRegistrant.swift
+android/app/src/main/kotlin
