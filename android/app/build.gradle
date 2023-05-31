@@ -69,6 +69,7 @@ android {
 
         // pass properties to AndroidManifest
         manifestPlaceholders.googleMapsAPIKey = googleMapsAPIKey
+        manifestPlaceholders.appId = appId
     }
 
     buildTypes {
