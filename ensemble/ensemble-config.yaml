@@ -44,6 +44,28 @@ i18n:
   #use country code after locale code such as en_us
   useCountryCode: false
 
+services:
+  # Social sign-in
+  signIn:
+
+  # Built-in API authorization. Override these callbacks in your Starter App.
+  # You may use https redirect (Universal Links) or custom scheme redirects.
+  # If using https redirect, redirectScheme should be empty
+  apiAuthorization:
+    # replace this with your server (TODO: provide documentation)
+    tokenExchangeServer: https://us-central1-ensemble-web-studio.cloudfunctions.net/oauth-gettoken
+
+    providers:
+      google:
+        clientId: 326748243798-btoriljk7i7sgsr9mvas90b0gn9vfebm.apps.googleusercontent.com
+        redirectUri: https://app.ensembleui.com/oauth-starter
+        redirectScheme:
+      microsoft:
+        clientId: 36501417-8ad8-4885-82eb-232f345524ac
+        redirectUri: msauth.com.ensembleui.ensemble-starter://auth
+        redirectScheme: msauth.com.ensembleui.ensemble-starter
+
+# Legacy Maps, replace with your own keys
 accounts:
   maps:
     mapbox_access_token: pk.eyJ1IjoiZW5zZW1ibGV1aSIsImEiOiJjbDVsYTNoeDQwaGQwM21udzhyemR3cDJrIn0.dnn3x8nZVj5ZFO3tn5l8Ww
