@@ -25,7 +25,7 @@ definitions:
   ensemble:
     # appId can be found on Ensemble Studio.
     appId: <my app id on studio.ensembleui.com>
-    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
+    i18nPath: https://raw.githubusercontent.com/EnsembleUI/starter/main/ensemble/i18n
 
   # for legacy Ensemble-hosted definitions, simply enter your Ensemble's app key
   legacy:
@@ -33,7 +33,7 @@ definitions:
     path: https://pz0mwfkp5m.execute-api.us-east-1.amazonaws.com/dev
     # appId can be found on Ensemble Studio.
     appId: <my app id>
-    i18nPath: https://raw.githubusercontent.com/EnsembleUI/ensemble_starter/main/ensemble/i18n
+    i18nPath: https://raw.githubusercontent.com/EnsembleUI/starter/main/ensemble/i18n
     enableCache: false
 
 i18n:
@@ -62,8 +62,8 @@ services:
         redirectScheme:
       microsoft:
         clientId: 36501417-8ad8-4885-82eb-232f345524ac
-        redirectUri: msauth.com.ensembleui.ensemble-starter://auth
-        redirectScheme: msauth.com.ensembleui.ensemble-starter
+        redirectUri: msauth.com.ensembleui.starter://auth
+        redirectScheme: msauth.com.ensembleui.starter
 
 # Legacy Maps, replace with your own keys
 accounts:

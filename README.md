@@ -41,7 +41,7 @@ Ensemble Studio includes an Online Editor for making changes with type-ahead sup
 - Add a new schema
 - Under Schema URL, enter `https://raw.githubusercontent.com/EnsembleUI/ensemble/main/assets/schema/ensemble_schema.json`
 - Select Schema version 7
-- Add a Directory mapping right below, pointing to `<your_folder>/ensemble_starter/ensemble/apps`.
+- Add a Directory mapping right below, pointing to `<your_folder>/starter/ensemble/apps`.
 - Editing any definition files will show the appropriate type-ahead.
 
 ### Visual Studio Code

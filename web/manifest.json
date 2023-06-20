@@ -1,6 +1,6 @@
 {
-    "name": "ensemble_starter",
-    "short_name": "ensemble_starter",
+    "name": "starter",
+    "short_name": "starter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
