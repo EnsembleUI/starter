@@ -8,7 +8,8 @@ if (localPropertiesFile.exists()) {
 
 // ensemble-configured properties
 def ensembleProperties = new Properties()
-def ensemblePropertiesFile = rootProject.file('ensemble.properties')
+def rootFlutterDir = rootDir.parentFile
+def ensemblePropertiesFile = new File(rootFlutterDir, 'ensemble/ensemble.properties')
 if (ensemblePropertiesFile.exists()) {
     ensemblePropertiesFile.withReader('UTF-8') { reader -> ensembleProperties.load(reader) }
 }
