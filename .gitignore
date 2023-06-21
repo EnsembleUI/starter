@@ -56,3 +56,10 @@ project.pbxproj
 GeneratedPluginRegistrant.swift
 gradle-wrapper.properties
 android/app/src/debug
+android/app/src/main/kotlin
+android/app/src/main/res
+android/app/src/profile
+android/.gitignore
+android/build.gradle
+android/gradle.properties
+android/settings.gradle
