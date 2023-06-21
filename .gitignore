@@ -49,10 +49,6 @@ lib/firebase_options.dart
 pubspec.lock
 .firebase
 Podfile.lock
-ios/Runner.xcodeproj
-ios/Runner/Assets.xcassets
-ios/Runner.xcworkspace
-ios/Runner/Base.lproj
 .metadata
 AppInfo.xcconfig
 contents.xcworkspacedata
