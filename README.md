@@ -20,18 +20,10 @@ Ensemble Studio enables you to make changes to your pages and immediately broadc
 - Login or sign up at studio.ensembleui.com.
 - Find your App ID. This is under the App's Settings screen, or on the App's URL `https://studio.ensembleui.com/app/<appId>/...`.
 - Open up `/ensemble/ensemble-config.yaml`. 
-  - Change `definitions -> from` to `ensemble`
-  - Change `definitions -> ensemble -> appId` with your App ID.
+  - Update `definitions -> from` to `ensemble` (previously `local`)
+  - Update `definitions -> ensemble -> appId` with your App ID.
 - Run the App with `flutter run`. Your App now fetches its pages and resources from Ensemble server.
 - Go back to your App on Ensemble Studio and make any changes. Re-running the App with `flutter run` should have the latest content.
-
-### Getting Started with hosting your own definition
-We recommend using Ensemble Studio for an optimal experience, but you can host the definitions yourself, either locally in this project, or remotely on your own server.
-Note: the ability to execute Typescript code within your definition locally is not yet supported. 
-- In `/ensemble/ensemble-config.yaml`, change `from: ensemble` to `from: local`.
-- We included a sample App under /ensemble/apps/helloApp with the home screen named `Hello Home`. Open it with any text editor at `/ensemble/apps/helloApp/Hello Home.yaml`.
-- Follow the same steps above to generate runtime and update dependencies. 
-- Try making changes to the definition. Upon re-run your screen should reflect the changes.
 
 ### Concepts
 - Each YAML definition under your app folder represents a screen.
