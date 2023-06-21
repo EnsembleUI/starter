@@ -15,7 +15,7 @@ if (ensemblePropertiesFile.exists()) {
 }
 def appId = ensembleProperties.getProperty('appId')
 def googleMapsAPIKey = ensembleProperties.getProperty('googleMapsAPIKey')
-def flutterMinSdkVersion = ensembleProperties.getProperty('flutter.minSdkVersion') ?: 21
+def androidMinSdkVersion = ensembleProperties.getProperty('android.minSdkVersion')
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {
@@ -59,7 +59,7 @@ android {
         applicationId appId
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutterMinSdkVersion
+        minSdkVersion androidMinSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
