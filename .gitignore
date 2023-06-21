@@ -63,3 +63,11 @@ android/.gitignore
 android/build.gradle
 android/gradle.properties
 android/settings.gradle
+ios/Runner/Assets.xcassets
+ios/Runner/Base.lproj
+widget_test.dart
+ios/RunnerTests
+ios/Runner.xcworkspace
+ios/Flutter
+ios/Runner.xcodeproj
+.gitignore
