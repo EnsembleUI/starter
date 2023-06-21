@@ -8,10 +8,14 @@ if (localPropertiesFile.exists()) {
 
 // ensemble-configured properties
 def ensembleProperties = new Properties()
-def ensemblePropertiesFile = rootProject.file('ensemble.properties')
+def rootFlutterDir = rootDir.parentFile
+def ensemblePropertiesFile = new File(rootFlutterDir, 'ensemble/ensemble.properties')
 if (ensemblePropertiesFile.exists()) {
     ensemblePropertiesFile.withReader('UTF-8') { reader -> ensembleProperties.load(reader) }
 }
+def appId = ensembleProperties.getProperty('appId')
+def googleMapsAPIKey = ensembleProperties.getProperty('googleMapsAPIKey')
+def androidMinSdkVersion = ensembleProperties.getProperty('android.minSdkVersion')
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {
@@ -27,14 +31,6 @@ def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
-
-def flutterMinSdkVersion = ensembleProperties.getProperty('flutter.minSdkVersion')
-if (flutterMinSdkVersion == null) {
-    flutterMinSdkVersion = 21
-}
-
-def appId = ensembleProperties.getProperty('appId')
-def googleMapsAPIKey = ensembleProperties.getProperty('googleMapsAPIKey')
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
@@ -59,10 +55,11 @@ android {
     }
 
     defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId appId
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutterMinSdkVersion
+        minSdkVersion androidMinSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

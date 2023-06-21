@@ -1,8 +1,5 @@
 ## Overview
-
-This starter project enables you to run Ensemble-powered Apps and generate release builds across iOS, Android, Web, Windows, ... It also includes examples on how to integrate Ensemble pages into your existing Flutter App.
-
-Ensemble's page definitions can be hosted via Ensemble Studio(default), on your server, or embed with this Flutter project locally. Change your configuration via `/ensemble/ensemble-config.yaml`
+This starter project enables running and deploying Ensemble-powered Apps across iOS, Android, and Web (other platforms are not yet fully supported). It also includes examples on how to integrate Ensemble pages into your existing Flutter App.
 
 ## Setup
 ### Prerequisite
@@ -11,23 +8,22 @@ Ensemble's page definitions can be hosted via Ensemble Studio(default), on your 
 - To run on iOS emulator, install Xcode and Simulator. Run `open -a Simulator`. Create a new Simulator as needed (File -> Open Simulator -> ..).
 - Please follow Flutter instructions on other platforms.
 
-### Getting Started with Ensemble Studio
-- Login to studio.ensembleui.com. If you don't have a login, request one by going here - https://ensembleui.com/, clicking on "Join the Waitlist" or "Request an Account" and filling up the form. Make sure you put your google email (your gmail or work email if that's on google). We'll create an account for you and send you an email with details.
-- Select your App or any of the available sample Apps and copy the appid from the url. The appid is the uuid string after /app/ in the url till the end or the next /.
-- Open up `/ensemble/ensemble-config.yaml` in your flutter project. Change definitions/from to ensemble and replace the appId value with your appId under ensemble/appId
-- Enter this under appId in `/ensemble/ensemble-config.yaml`
-- Run `flutter create --platforms=ios,android,web .` (note the end period) to generate the runtime and fetch dependencies. Other available platforms are `windows,macos`. You'll only have to do this step once.
-- Run `flutter pub upgrade` to update dependencies as the supported libraries change.
+### Initial Setup
+- Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<appname> e.g. `com.ensembleui.appname` (all lowercase recommended).
+- Run `flutter create --org com.ensembleui --platform=ios,android,web .` (not the period at the end). If you modified the appId, make sure the org matches the app ID's prefix.
+- Run `flutter pub get` to get dependencies.
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
-- Try making changes to your App on Ensemble Studio. Re-run this project and the changes should be reflected.
+- This will run the `helloApp` packaged with this repo. You can host any apps locally, on your own server, or on Ensemble-hosted server. 
 
-### Getting Started with hosting your own definition
-We recommend using Ensemble Studio for an optimal experience, but you can host the definitions yourself, either locally in this project, or remotely on your own server.
-Note: the ability to execute Typescript code within your definition locally is not yet supported. 
-- In `/ensemble/ensemble-config.yaml`, change `from: ensemble` to `from: local`.
-- We included a sample App under /ensemble/apps/helloApp with the home screen named `Hello Home`. Open it with any text editor at `/ensemble/apps/helloApp/Hello Home.yaml`.
-- Follow the same steps above to generate runtime and update dependencies. 
-- Try making changes to the definition. Upon re-run your screen should reflect the changes.
+### Getting Started with Ensemble Studio
+Ensemble Studio enables you to make changes to your pages and immediately broadcast the changes to your App (both native and web). Here's how to get started:
+- Login or sign up at studio.ensembleui.com.
+- Find your App ID. This is under the App's Settings screen, or on the App's URL `https://studio.ensembleui.com/app/<appId>/...`.
+- Open up `/ensemble/ensemble-config.yaml`. 
+  - Update `definitions -> from` to `ensemble` (previously `local`)
+  - Update `definitions -> ensemble -> appId` with your App ID.
+- Run the App with `flutter run`. Your App now fetches its pages and resources from Ensemble server.
+- Go back to your App on Ensemble Studio and make any changes. Re-running the App with `flutter run` should have the latest content.
 
 ### Concepts
 - Each YAML definition under your app folder represents a screen.

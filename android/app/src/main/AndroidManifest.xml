@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="${appId}">
+
+    <!-- UPDATE for your Starter. These are default permissions -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:label="starter"
         android:name="${applicationName}"
@@ -25,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
-            <!-- https app links -->
+            <!-- UPDATE for your Starter. Generic Https App Links for OAuth -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -37,15 +40,20 @@
                     android:pathPrefix="/oauth-starter" />
             </intent-filter>
 
-            <!-- custom scheme deep linking -->
+            <!-- UPDATE for your Starter. Custom Scheme Deep Linking for OAuth -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <!-- Accepts URIs that begin with YOUR_SCHEME://YOUR_HOST -->
+
+                <!-- Microsoft OAuth -->
                 <data
                     android:scheme="msauth.com.ensembleui.starter"
-                    android:host="auth"  />
+                    android:host="auth" />
+                <!-- Other OAuth -->
+
             </intent-filter>
 
         </activity>
@@ -54,11 +62,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="${googleMapsAPIKey}"/>
-
-
-
     </application>
 </manifest>
