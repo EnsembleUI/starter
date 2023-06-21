@@ -71,3 +71,11 @@ ios/Runner.xcworkspace
 ios/Flutter
 ios/Runner.xcodeproj
 .gitignore
+ios/.symlinks
+ios/Pods
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+android/app/src/main/java
+android/gradle/wrapper/gradle-wrapper.jar
+android/gradlew
+android/gradlew.bat
