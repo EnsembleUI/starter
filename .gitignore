@@ -40,9 +40,6 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
 .gradle
 windows
 local.properties
@@ -61,10 +58,5 @@ AppInfo.xcconfig
 contents.xcworkspacedata
 project.pbxproj
 GeneratedPluginRegistrant.swift
-android/app/src/main/kotlin
-android/build.gradle
-android/gradle.properties
-android/settings.gradle
-android/app/src/debug
-android/app/src/profile
 gradle-wrapper.properties
+android/app/src/debug
