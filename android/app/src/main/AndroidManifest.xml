@@ -28,35 +28,43 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
+        </activity>
+
+        <!-- OAuth callback -->
+        <activity
+            android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
+            android:exported="true">
+
             <!-- UPDATE for your Starter. Generic Https App Links for OAuth -->
-            <intent-filter android:autoVerify="true">
+            <intent-filter android:label="flutter_web_auth_2">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- Accepts URIs that begin with https://YOUR_HOST -->
+
                 <data
-                    android:scheme="https"
                     android:host="app.ensembleui.com"
+                    android:scheme="https"
                     android:pathPrefix="/oauth-starter" />
             </intent-filter>
 
             <!-- UPDATE for your Starter. Custom Scheme Deep Linking for OAuth -->
-            <intent-filter>
+            <intent-filter android:label="flutter_web_auth_2">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <!-- Accepts URIs that begin with YOUR_SCHEME://YOUR_HOST -->
-
-                <!-- Microsoft OAuth -->
+                <!-- microsoft -->
                 <data
                     android:scheme="msauth.com.ensembleui.starter"
                     android:host="auth" />
-                <!-- Other OAuth -->
 
             </intent-filter>
-
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${googleMapsAPIKey}" />
+
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
