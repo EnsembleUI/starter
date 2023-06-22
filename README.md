@@ -9,11 +9,10 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 - Please follow Flutter instructions on other platforms.
 
 ### Initial Setup
-- Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<appname> e.g. `com.ensembleui.appname` (all lowercase recommended).
-- Run `flutter create --org com.ensembleui --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org matches the app ID's prefix.
-- Run `flutter pub get` to get dependencies.
+- Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<project name> e.g. `com.ensembleui.myfirstapp` (all lowercase, no special characters).
+- Run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID.
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
-- This will run the `helloApp` packaged with this repo. You can host any apps locally, on your own server, or on Ensemble-hosted server. 
+- This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
 
 ### Getting Started with Ensemble Studio
 Ensemble Studio enables you to make changes to your pages and immediately broadcast the changes to your App (both native and web). Here's how to get started:
