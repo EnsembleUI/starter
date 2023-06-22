@@ -10,7 +10,7 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 
 ### Initial Setup
 - Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<project name> e.g. `com.ensembleui.myfirstapp` (all lowercase, no special characters).
-- Run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID.
+- Run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web,windows,macos,linux .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID. 
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
 - This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
 
@@ -32,12 +32,18 @@ Ensemble Studio enables you to make changes to your pages and immediately broadc
 ## Editing definitions
 Ensemble Studio includes an Online Editor for making changes with type-ahead support and enables Live Preview. However if you decide to host your own definitions, we include a JSON Schema to help with type-ahead for popular Editors.
 ### Android Studio
+- Install Dart and Flutter plugins from `Settings > Plugins > Marketplace`
 - Open Preferences and go to `Languages & Frameworks > Schemas and DTDs > JSON Schema Mappings`
 - Add a new schema
 - Under Schema URL, enter `https://raw.githubusercontent.com/EnsembleUI/ensemble/main/assets/schema/ensemble_schema.json`
 - Select Schema version 7
 - Add a Directory mapping right below, pointing to `<your_folder>/starter/ensemble/apps`.
 - Editing any definition files will show the appropriate type-ahead.
+- Open Preferences and go to `Languages & Frameworks > Dart`
+- Enable Dart support
+- Add Dart SDK path (windows: `C:\flutter\bin\cache\dart-sdk`)
+- Select `project '<starter>'` and Apply changes
+- Select your desired device from 'target selector', `lib\main.dart` file in 'config selector' and hit Run
 
 ### Visual Studio Code
 - With [VS Code](https://code.visualstudio.com/download), open folder `/ensemble/apps`. 
