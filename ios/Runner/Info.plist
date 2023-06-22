@@ -57,7 +57,7 @@
             <key>CFBundleURLSchemes</key>
             <array>
                 <!-- Microsoft OAuth -->
-                <string>msauth.com.ensembleui.starter://auth</string>
+                <string>msauth.com.ensembleui.starter</string>
             </array>
         </dict>
     </array>
