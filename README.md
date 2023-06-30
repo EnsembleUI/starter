@@ -8,14 +8,14 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 - To run on iOS emulator, install Xcode and Simulator. Run `open -a Simulator`. Create a new Simulator as needed (File -> Open Simulator -> ..).
 - Please follow Flutter instructions on other platforms.
 
-### Initial Setup
+### Setup and Run a sample App
 - Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<project name> e.g. `com.ensembleui.myfirstapp` (all lowercase, no special characters).
 - From the project root, run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID.
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
-- This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
-- Note: if you get this error while running on iOS simulator: 'Error (Xcode): Building for iOS Simulator, but linking in object file built for iOS', simply run `flutter run` again.
+  - This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
+  - Note: if you get this error while running on iOS simulator: 'Error (Xcode): Building for iOS Simulator, but linking in object file built for iOS', simply run `flutter run` again.
 
-### Getting Started with Ensemble Studio
+### Connecting to your app on Ensemble Studio
 Ensemble Studio enables you to make changes to your pages and immediately broadcast the changes to your App (both native and web). Here's how to get started:
 - Login or sign up at studio.ensembleui.com.
 - Find your App ID. This is under the App's Settings screen, or on the App's URL `https://studio.ensembleui.com/app/<appId>/...`.
@@ -26,10 +26,9 @@ Ensemble Studio enables you to make changes to your pages and immediately broadc
 - Go back to your App on Ensemble Studio and make any changes. Re-running the App with `flutter run` should have the latest content.
 
 ### Prepared your app for deployment
-- Register your Bundle ID for iOS and Android. They should ideally be the same.
-- Go back to `/ensemble/ensemble.properties`. Update the `appId` to this bundle ID and change your `appName`.
-- 
-
+- Register your Bundle ID for iOS and Android. They should ideally be the same, e.g. `com.mycompany.myapp`
+- Go back to `/ensemble/ensemble.properties`. Update the `appId` to this bundle ID and change your `appName` to the name of the App.
+- From the project root, run `flutter create --org <com.mycompany> --project-name <myapp> --platform=ios,android,web .`. Using the bundleId example `com.mycompany.myapp`, the org would be the reversed domain (com.mycompany), while the project name is the last token after the domain (myapp).
 
 ### Concepts
 - Each YAML definition under your app folder represents a screen.
