@@ -14,6 +14,7 @@ if (ensemblePropertiesFile.exists()) {
     ensemblePropertiesFile.withReader('UTF-8') { reader -> ensembleProperties.load(reader) }
 }
 def appId = ensembleProperties.getProperty('appId')
+def appName = ensembleProperties.getProperty('appName')
 def googleMapsAPIKey = ensembleProperties.getProperty('googleMapsAPIKey')
 def androidMinSdkVersion = ensembleProperties.getProperty('android.minSdkVersion')
 
@@ -67,6 +68,7 @@ android {
         // pass properties to AndroidManifest
         manifestPlaceholders.googleMapsAPIKey = googleMapsAPIKey
         manifestPlaceholders.appId = appId
+        manifestPlaceholders.appName = appName
     }
 
     buildTypes {
