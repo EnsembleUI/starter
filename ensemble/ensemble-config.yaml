@@ -47,6 +47,17 @@ i18n:
 services:
   # Social sign-in
   signIn:
+    serverUri:
+
+    providers:
+
+      # replace with your clientId
+      google:
+        iOSClientId: 126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak.apps.googleusercontent.com
+        androidClientId:
+        webClientId:
+        serverClientId:
+
 
   # Built-in API authorization. Override these callbacks in your Starter App.
   # You may use https redirect (Universal Links) or custom scheme redirects.

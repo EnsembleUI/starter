@@ -51,6 +51,17 @@
 	<!-- UPDATE for your Starter. Custom Scheme for OAuth -->
 	<key>CFBundleURLTypes</key>
     <array>
+        <!-- Google Sign in, replace with your URL scheme -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak</string>
+            </array>
+        </dict>
+
+
         <dict>
             <key>CFBundleURLName</key>
             <string>com.ensembleui.starter</string>
