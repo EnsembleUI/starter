@@ -15,6 +15,15 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
 - This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
 
+### Additional Permissions
+By default, the starter does not include capabilities that may require additional permissions from the end user such as camera or location. Excluding these capabilities by default improves the chances of your app passing review for the iOS App Store or Android Google Play Store. If your app requires these capabilities:
+- In `pubspec.yaml`, uncomment the libraries that correspond to the capabilities you need, e.g. `ensemble_camera`
+- Run `flutter pub upgrade`
+- In `lib/generated/EnsembleServices.dart`, uncomment the lines that correspond with your capabilities. For example, if you are importing `ensemble_camera`, uncomment the import and lines relating to `CameraServiceImpl`
+  - TODO: these files will eventually be automatically generated during a build step
+- Run `flutter run` to verify the additional capabilities
+- Follow the [docs](https://docs.ensembleui.com/#/deploy/1-prepare-app) on deploying your app 
+
 ### Getting Started with Ensemble Studio
 Ensemble Studio enables you to make changes to your pages and immediately broadcast the changes to your App (both native and web). Here's how to get started:
 - Login or sign up at studio.ensembleui.com.
@@ -47,7 +56,6 @@ Ensemble Studio includes an Online Editor for making changes with type-ahead sup
 ## Generate release code for deployment 
 - Run `flutter build web --release`. The output will be under `/build/web`
 - Follow [iOS](https://docs.flutter.dev/deployment/ios), [Android](https://docs.flutter.dev/deployment/android), [MacOS](https://docs.flutter.dev/deployment/macos), [Windows](https://docs.flutter.dev/deployment/windows) release documentation.
-
 
 ## Misc
 ### Run with remote definition (to be continued)
