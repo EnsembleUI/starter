@@ -47,6 +47,11 @@ dependencies:
 #      url: https://github.com/EnsembleUI/ensemble_file_manager.git
 #      ref: main
 
+  ensemble_auth:
+    git:
+      url: https://github.com/EnsembleUI/ensemble_module_auth.git
+      ref: main
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
