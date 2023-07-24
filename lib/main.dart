@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:ensemble/ensemble_app.dart';
 import 'package:ensemble/framework/error_handling.dart';
 import 'package:ensemble/framework/widget/error_screen.dart';
-import 'package:ensemble_starter/generated/EnsembleServices.dart';
+import 'package:ensemble_starter/generated/ensemble_modules.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initErrorHandler();
-  EnsembleServices().init();
+  EnsembleModules().init();
   runApp(EnsembleApp());
 }
 

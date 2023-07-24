@@ -4,5 +4,5 @@ class ModuleSettings {
   static const useLocation = false;
 
   // optional modules
-  static const useAuth = true;
+  static const useAuth = false;
 }
