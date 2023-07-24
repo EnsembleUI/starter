@@ -1,4 +1,5 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
+import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
 
@@ -7,6 +8,9 @@ import 'package:get_it/get_it.dart';
 
 // Uncomment to enable camera services
 // import 'package:ensemble_camera/camera_manager.dart';
+
+// Uncomment to enable file manager services
+// import 'package:ensemble_file_manager/file_manager.dart';
 
 
 /// TODO: This class should be generated to enable selected Services
@@ -19,6 +23,7 @@ class EnsembleModules {
 
   // capabilities
   static const useCamera = false;
+  static const useFiles = false;
 
   // optional modules
   static const useAuth = false;
@@ -30,6 +35,13 @@ class EnsembleModules {
       // GetIt.I.registerSingleton<CameraManager>(CameraManagerImpl());
     } else {
       GetIt.I.registerSingleton<CameraManager>(CameraManagerStub());
+    }
+
+    if (useFiles) {
+      // Uncomment to enable file manager service
+      // GetIt.I.registerSingleton<FileManager>(FileManagerImpl());
+    } else {
+      GetIt.I.registerSingleton<FileManager>(FileManagerStub());
     }
 
 
