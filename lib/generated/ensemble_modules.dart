@@ -1,7 +1,6 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
-import 'package:ensemble_starter/generated/module_settings.dart';
 
 // Uncomment to enable Auth service
 // import 'package:ensemble_auth/module/auth_module.dart';
@@ -18,9 +17,15 @@ class EnsembleModules {
     return _instance;
   }
 
+  // capabilities
+  static const useCamera = false;
+
+  // optional modules
+  static const useAuth = false;
+
   void init() {
 
-    if (ModuleSettings.useCamera) {
+    if (useCamera) {
       // Uncomment to enable camera service
       // GetIt.I.registerSingleton<CameraManager>(CameraManagerImpl());
     } else {
@@ -28,7 +33,7 @@ class EnsembleModules {
     }
 
 
-    if (ModuleSettings.useAuth) {
+    if (useAuth) {
       // Uncomment to enable Auth service
       // AuthModuleImpl().init();
     } else {

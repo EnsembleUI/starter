@@ -15,11 +15,11 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
 - This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
 
-### Additional Permissions
-By default, the starter does not include capabilities that may require additional permissions from the end user such as camera or location. Excluding these capabilities by default improves the chances of your app passing review for the iOS App Store or Android Google Play Store. If your app requires these capabilities:
+### Modules
+By default, Starter does not include all the modules or capabilities (e.g. camera, location). Excluding these capabilities by default reduces the App's size and not trigger any red flags during your App Store Review (e.g. camera code is present when your app doesn't use camera). Please follow the below steps carefully if your app requires these capabilities:
 - In `pubspec.yaml`, uncomment the libraries that correspond to the capabilities you need, e.g. `ensemble_camera`
 - Run `flutter pub upgrade`
-- In `lib/generated/EnsembleServices.dart`, uncomment the lines that correspond with your capabilities. For example, if you are importing `ensemble_camera`, uncomment the import and lines relating to `CameraServiceImpl`
+- In `lib/generated/EnsembleModules.dart`, enable your services and uncomment the lines that correspond with your capabilities. For example, if you are importing `ensemble_camera`, uncomment the import and lines relating to `CameraServiceImpl`
   - TODO: these files will eventually be automatically generated during a build step
 - Run `flutter run` to verify the additional capabilities
 - Follow the [docs](https://docs.ensembleui.com/#/deploy/1-prepare-app) on deploying your app 
