@@ -4,7 +4,7 @@ import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
 
 // Uncomment to enable Auth service
-// import 'package:ensemble_auth/module/auth_module.dart';
+import 'package:ensemble_auth/module/auth_module.dart';
 
 // Uncomment to enable camera services
 // import 'package:ensemble_camera/camera_manager.dart';
@@ -26,7 +26,7 @@ class EnsembleModules {
   static const useFiles = false;
 
   // optional modules
-  static const useAuth = false;
+  static const useAuth = true;
 
   void init() {
 
@@ -47,7 +47,7 @@ class EnsembleModules {
 
     if (useAuth) {
       // Uncomment to enable Auth service
-      // AuthModuleImpl().init();
+      AuthModuleImpl().init();
     } else {
       AuthModuleStub().init();
     }

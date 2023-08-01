@@ -34,9 +34,10 @@ dependencies:
 
   # embed Ensemble as a sibling project
   ensemble:
-    git:
-      url: https://github.com/EnsembleUI/ensemble.git
-      ref: main
+    path: ../ensemble
+#    git:
+#      url: https://github.com/EnsembleUI/ensemble.git
+#      ref: main
 
   # Uncomment to enable camera services
 #  ensemble_camera:
@@ -48,8 +49,9 @@ dependencies:
 #      url: https://github.com/EnsembleUI/ensemble_file_manager.git
 #      ref: main
 
-  # Uncomment to enable Auth service
-#  ensemble_auth:
+#   Uncomment to enable Auth service
+  ensemble_auth:
+    path: ../ensemble_module_auth
 #    git:
 #      url: https://github.com/EnsembleUI/ensemble_module_auth.git
 #      ref: main

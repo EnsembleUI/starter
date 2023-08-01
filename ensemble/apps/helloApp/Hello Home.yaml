@@ -7,9 +7,16 @@ View:
       children:
         # widget displaying a text
         - Text:
+            id: theText
             text: Welcome
 
         # reference a reusable widget defined in resources.ensemble
         - MyCustomWidget1:
             inputs:
               name: Peter Parker
+        - SignInWithAuth0:
+            scheme: flutterdemo
+            provider: auth0
+            onAuthenticated: |
+              //@code
+              theText.text = "Signed in as " + event.data.user.name

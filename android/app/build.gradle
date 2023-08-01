@@ -69,6 +69,7 @@ android {
         manifestPlaceholders.googleMapsAPIKey = googleMapsAPIKey
         manifestPlaceholders.appId = appId
         manifestPlaceholders.appName = appName
+        manifestPlaceholders += [auth0Domain: "dev-dntcynxqqr8hkoi1.us.auth0.com", auth0Scheme: "flutterdemo"]
     }
 
     buildTypes {

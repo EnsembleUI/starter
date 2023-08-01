@@ -47,10 +47,14 @@ i18n:
 services:
   # Social sign-in
   signIn:
-    serverUri:
+    serverUri: dev-dntcynxqqr8hkoi1.us.auth0.com
 
     providers:
-
+      auth0:
+        iOSClientId: 24VEWcQG4wmc15maD54qUCTRCVYq8lrc
+        androidClientId: 24VEWcQG4wmc15maD54qUCTRCVYq8lrc
+        webClientId: 24VEWcQG4wmc15maD54qUCTRCVYq8lrc
+        serverClientId: 24VEWcQG4wmc15maD54qUCTRCVYq8lrc
       # replace with your clientId
       google:
         iOSClientId: 126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak.apps.googleusercontent.com
