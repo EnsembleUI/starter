@@ -34,10 +34,10 @@ dependencies:
 
   # embed Ensemble as a sibling project
   ensemble:
-    path: ../ensemble
-#    git:
-#      url: https://github.com/EnsembleUI/ensemble.git
-#      ref: main
+#    path: ../ensemble
+    git:
+      url: https://github.com/EnsembleUI/ensemble.git
+      ref: main
 
   # Uncomment to enable camera services
 #  ensemble_camera:
@@ -51,10 +51,10 @@ dependencies:
 
 #   Uncomment to enable Auth service
   ensemble_auth:
-    path: ../ensemble_module_auth
-#    git:
-#      url: https://github.com/EnsembleUI/ensemble_module_auth.git
-#      ref: main
+#    path: ../ensemble_module_auth
+    git:
+      url: https://github.com/EnsembleUI/ensemble_module_auth.git
+      ref: evshi/auth0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

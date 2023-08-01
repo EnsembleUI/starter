@@ -1,10 +1,10 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
+import 'package:ensemble_auth/auth_module.dart';
 import 'package:get_it/get_it.dart';
 
 // Uncomment to enable Auth service
-import 'package:ensemble_auth/module/auth_module.dart';
 
 // Uncomment to enable camera services
 // import 'package:ensemble_camera/camera_manager.dart';
