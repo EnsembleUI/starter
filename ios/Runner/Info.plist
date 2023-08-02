@@ -60,17 +60,6 @@
                 <string>com.googleusercontent.apps.126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak</string>
             </array>
         </dict>
-
-
-        <dict>
-            <key>CFBundleURLName</key>
-            <string>com.ensembleui.starter</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <!-- Microsoft OAuth -->
-                <string>msauth.com.ensembleui.starter</string>
-            </array>
-        </dict>
     </array>
 
 </dict>

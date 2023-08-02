@@ -17,6 +17,8 @@ def appId = ensembleProperties.getProperty('appId')
 def appName = ensembleProperties.getProperty('appName')
 def googleMapsAPIKey = ensembleProperties.getProperty('googleMapsAPIKey')
 def androidMinSdkVersion = ensembleProperties.getProperty('android.minSdkVersion')
+def auth0Domain = ensembleProperties.getProperty("auth0Domain")
+def auth0Scheme = ensembleProperties.getProperty("auth0Scheme")
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {
@@ -69,6 +71,9 @@ android {
         manifestPlaceholders.googleMapsAPIKey = googleMapsAPIKey
         manifestPlaceholders.appId = appId
         manifestPlaceholders.appName = appName
+
+        manifestPlaceholders.auth0Domain = auth0Domain
+        manifestPlaceholders.auth0Scheme = auth0Scheme
     }
 
     buildTypes {
