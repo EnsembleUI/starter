@@ -1,8 +1,11 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
+import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
 
+// Uncomment to enable ensemble_chat widget
+// import 'package:ensemble_chat/ensemble_chat.dart';
 // Uncomment to enable Auth service
 // import 'package:ensemble_auth/auth_module.dart';
 
@@ -11,7 +14,6 @@ import 'package:get_it/get_it.dart';
 
 // Uncomment to enable file manager services
 // import 'package:ensemble_file_manager/file_manager.dart';
-
 
 /// TODO: This class should be generated to enable selected Services
 class EnsembleModules {
@@ -25,11 +27,13 @@ class EnsembleModules {
   static const useCamera = false;
   static const useFiles = false;
 
+  // widgets
+  static const enableChat = false;
+
   // optional modules
   static const useAuth = false;
 
   void init() {
-
     if (useCamera) {
       // Uncomment to enable camera service
       // GetIt.I.registerSingleton<CameraManager>(CameraManagerImpl());
@@ -44,7 +48,6 @@ class EnsembleModules {
       GetIt.I.registerSingleton<FileManager>(FileManagerStub());
     }
 
-
     if (useAuth) {
       // Uncomment to enable Auth service
       // AuthModuleImpl().init();
@@ -52,7 +55,11 @@ class EnsembleModules {
       AuthModuleStub().init();
     }
 
+    if (enableChat) {
+      // Uncomment to enable ensemble chat
+      // GetIt.I.registerSingleton<EnsembleChat>(EnsembleChatImpl());
+    } else {
+      GetIt.I.registerSingleton<EnsembleChat>(const EnsembleChatStub());
+    }
   }
-
-
 }
