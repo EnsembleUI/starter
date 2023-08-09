@@ -1,5 +1,5 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
-import 'package:ensemble/framework/stub/ensemble_chat.dart';
+// import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
@@ -59,7 +59,7 @@ class EnsembleModules {
       // Uncomment to enable ensemble chat
       // GetIt.I.registerSingleton<EnsembleChat>(EnsembleChatImpl());
     } else {
-      GetIt.I.registerSingleton<EnsembleChat>(const EnsembleChatStub());
+      // GetIt.I.registerSingleton<EnsembleChat>(const EnsembleChatStub());
     }
   }
 }
