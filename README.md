@@ -65,3 +65,6 @@ To take advantage of Server-driven UI (change your UI at anytime from the server
 Use [Android Studio](https://developer.android.com/studio) to open this project and run `main.dart`.
 To incorporate Ensemble pages to your existing Flutter App, see `example_existing_app_*.dart`.
 
+## Build Tips
+### Windows
+- If any issue is faced on `flutter pub get`, clean Pub cache either by running `flutter pub cache clean` command or emptying the contents of 'C:\Users\username\AppData\Local\Pub\Cache' directory.
