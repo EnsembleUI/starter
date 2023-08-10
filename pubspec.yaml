@@ -3,7 +3,7 @@ description: Ensemble Starter project in Flutter
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -40,28 +40,30 @@ dependencies:
       ref: main
 
   # Uncomment to enable camera services
-#  ensemble_camera:
-#    git:
-#      url: https://github.com/EnsembleUI/ensemble_camera.git
-#      ref: main
-#  ensemble_file_manager:
-#    git:
-#      url: https://github.com/EnsembleUI/ensemble_file_manager.git
-#      ref: main
+  #  ensemble_camera:
+  #    git:
+  #      url: https://github.com/EnsembleUI/ensemble_camera.git
+  #      ref: main
+  #  ensemble_file_manager:
+  #    git:
+  #      url: https://github.com/EnsembleUI/ensemble_file_manager.git
+  #      ref: main
+  # ensemble_contacts:
+  #   git:
+  #     url: https://github.com/EnsembleUI/ensemble_contacts.git
+  #     ref: main
 
   # Uncomment to enable Auth service
-#  ensemble_auth:
-#    git:
-#      url: https://github.com/EnsembleUI/ensemble_module_auth.git
-#      ref: main
-
+  #  ensemble_auth:
+  #    git:
+  #      url: https://github.com/EnsembleUI/ensemble_module_auth.git
+  #      ref: main
 
   # Uncomment to enable ensemble chat widget
   # ensemble_chat:
   #  git:
   #    url: https://github.com/EnsembleUI/ensemble_chat.git
   #    ref: main
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -85,7 +87,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -102,4 +103,3 @@ flutter:
     # list all your Apps directories here. It's a Flutter requirement
     - ensemble/apps/helloApp/
     #- ensemble/apps/another_app_of_yours/
-

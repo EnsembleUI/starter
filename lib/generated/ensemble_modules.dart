@@ -1,13 +1,18 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
 // import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
+import 'package:ensemble/framework/stub/contacts_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
 
 // Uncomment to enable ensemble_chat widget
 // import 'package:ensemble_chat/ensemble_chat.dart';
+
 // Uncomment to enable Auth service
 // import 'package:ensemble_auth/auth_module.dart';
+
+// Uncomment to enable ensemble_contacts service
+// import 'package:ensemble_contacts/contact_manager.dart';
 
 // Uncomment to enable camera services
 // import 'package:ensemble_camera/camera_manager.dart';
@@ -26,6 +31,7 @@ class EnsembleModules {
   // capabilities
   static const useCamera = false;
   static const useFiles = false;
+  static const useContacts = false;
 
   // widgets
   static const enableChat = false;
@@ -46,6 +52,13 @@ class EnsembleModules {
       // GetIt.I.registerSingleton<FileManager>(FileManagerImpl());
     } else {
       GetIt.I.registerSingleton<FileManager>(FileManagerStub());
+    }
+
+    if (useContacts) {
+      // Uncomment to enable contacts service
+      // GetIt.I.registerSingleton<ContactManager>(ContactManagerImpl());
+    } else {
+      GetIt.I.registerSingleton<ContactManager>(ContactManagerStub());
     }
 
     if (useAuth) {
