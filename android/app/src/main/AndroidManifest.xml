@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:label="starter"
+        android:label="${appName}"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -35,6 +35,16 @@
             android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
             android:exported="true">
 
+            <!-- Generic custom scheme callback. This will work as-is, as long as you use the correct appId defined in ensemble.properties. -->
+            <!-- Use this for OAuth services that accepts any redirect URI (e.g. Google) -->
+            <!-- Your redirectURI should look like "<appId>://" -->
+            <intent-filter android:label="flutter_web_auth_2">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${appId}" />
+            </intent-filter>
+
             <!-- UPDATE for your Starter. Generic Https App Links for OAuth -->
             <intent-filter android:label="flutter_web_auth_2">
                 <action android:name="android.intent.action.VIEW" />
@@ -53,10 +63,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <!-- microsoft -->
-                <data
-                    android:scheme="msauth.com.ensembleui.starter"
-                    android:host="auth" />
+                <!-- microsoft OAuth -->
+                <data android:scheme="msauth"/>
 
             </intent-filter>
         </activity>

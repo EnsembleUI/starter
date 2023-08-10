@@ -51,22 +51,16 @@
 	<!-- UPDATE for your Starter. Custom Scheme for OAuth -->
 	<key>CFBundleURLTypes</key>
     <array>
+        <!-- Google Sign in, replace with your URL scheme -->
         <dict>
-            <key>CFBundleURLName</key>
-            <string>com.ensembleui.starter</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <!-- Microsoft OAuth -->
-                <string>msauth.com.ensembleui.starter</string>
+                <string>com.googleusercontent.apps.126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak</string>
             </array>
         </dict>
     </array>
-
-    <!-- UPDATE for your Starter. These are default permissions -->
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>This app needs access to location when in the background.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app needs access to location when open.</string>
 
 </dict>
 </plist>

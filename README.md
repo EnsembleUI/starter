@@ -10,9 +10,19 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 
 ### Initial Setup
 - Review `/ensemble/ensemble.properties`. Update the appId as needed - this is your app's bundle ID in the format of <reversed-domain>.<project name> e.g. `com.ensembleui.myfirstapp` (all lowercase, no special characters).
+- Run `flutter pub upgrade`. Run this occasionally when the Ensemble framework has been updated. 
 - Run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID.
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
 - This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
+
+### Modules
+By default, Starter does not include all the modules or capabilities (e.g. camera, location). Excluding these capabilities by default reduces the App's size and not trigger any red flags during your App Store Review (e.g. camera code is present when your app doesn't use camera). Please follow the below steps carefully if your app requires these capabilities:
+- In `pubspec.yaml`, uncomment the libraries that correspond to the capabilities you need, e.g. `ensemble_camera`
+- Run `flutter pub upgrade`
+- In `lib/generated/EnsembleModules.dart`, enable your services and uncomment the lines that correspond with your capabilities. For example, if you are importing `ensemble_camera`, uncomment the import and lines relating to `CameraServiceImpl`
+  - TODO: these files will eventually be automatically generated during a build step
+- Run `flutter run` to verify the additional capabilities
+- Follow the [docs](https://docs.ensembleui.com/#/deploy/1-prepare-app) on deploying your app 
 
 ### Getting Started with Ensemble Studio
 Ensemble Studio enables you to make changes to your pages and immediately broadcast the changes to your App (both native and web). Here's how to get started:
@@ -47,7 +57,6 @@ Ensemble Studio includes an Online Editor for making changes with type-ahead sup
 - Run `flutter build web --release`. The output will be under `/build/web`
 - Follow [iOS](https://docs.flutter.dev/deployment/ios), [Android](https://docs.flutter.dev/deployment/android), [MacOS](https://docs.flutter.dev/deployment/macos), [Windows](https://docs.flutter.dev/deployment/windows) release documentation.
 
-
 ## Misc
 ### Run with remote definition (to be continued)
 To take advantage of Server-driven UI (change your UI at anytime from the server), you can host these definitions on your file server.
@@ -56,3 +65,6 @@ To take advantage of Server-driven UI (change your UI at anytime from the server
 Use [Android Studio](https://developer.android.com/studio) to open this project and run `main.dart`.
 To incorporate Ensemble pages to your existing Flutter App, see `example_existing_app_*.dart`.
 
+## Build Tips
+### Windows
+- If any issue is faced on `flutter pub get`, clean Pub cache either by running `flutter pub cache clean` command or emptying the contents of 'C:\Users\username\AppData\Local\Pub\Cache' directory.
