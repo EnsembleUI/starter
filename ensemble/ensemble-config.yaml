@@ -1,6 +1,6 @@
 definitions:
   # where your page definitions are hosted ('local', 'remote' or 'ensemble')
-  from: ensemble
+  from: local
 
   # for embedding definitions locally in your Flutter App
   local:
@@ -47,6 +47,17 @@ i18n:
 services:
   # Social sign-in
   signIn:
+    serverUri:
+
+    providers:
+
+      # replace with your clientId
+      google:
+        iOSClientId: 126811761383-8idgi6nkva2tb33j42l5vpqu3jli6eak.apps.googleusercontent.com
+        androidClientId: 126811761383-pm0dlhb9fb8svso7f9bapv3fojmncvfo.apps.googleusercontent.com
+        webClientId: 126811761383-3k0ojg0tbuslc1pbhh0vllu1orbr3aml.apps.googleusercontent.com
+        serverClientId: 126811761383-5grp0akbag9aam2nl0r7j5j6u77l39eb.apps.googleusercontent.com
+
 
   # Built-in API authorization. Override these callbacks in your Starter App.
   # You may use https redirect (Universal Links) or custom scheme redirects.
