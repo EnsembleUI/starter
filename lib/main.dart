@@ -6,13 +6,12 @@ import 'package:ensemble/framework/widget/error_screen.dart';
 import 'package:ensemble_starter/generated/ensemble_modules.dart';
 import 'package:flutter/material.dart';
 
-
 /// this demonstrates an App running exclusively with Ensemble
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initErrorHandler();
   EnsembleModules().init();
-  runApp(EnsembleApp());
+  runApp(const EnsembleApp());
 }
 
 void initErrorHandler() {
