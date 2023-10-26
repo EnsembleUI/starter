@@ -15,6 +15,10 @@ import GoogleMaps
     methodChannel =  FlutterMethodChannel(name: AppDelegate.methodChannelName, binaryMessenger: controller.binaryMessenger)
     GMSServices.provideAPIKey("AIzaSyD8vwvoaEPEgYemp1EkIETetJMvyS4Ptqk")
     GeneratedPluginRegistrant.register(with: self)
+      
+    // MARK: Get keychain values from Ensemble to Host
+    // let name = KeychainService().read(key: "name", groupId: nil, accountName: nil, synchronizable: nil).value
+    // print("name: \(name)")
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     

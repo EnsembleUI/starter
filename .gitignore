@@ -79,3 +79,7 @@ android/app/src/main/java
 android/gradle/wrapper/gradle-wrapper.jar
 android/gradlew
 android/gradlew.bat
+
+# Exclude Platforms
+linux/
+macos/
