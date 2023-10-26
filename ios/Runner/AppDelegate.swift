@@ -17,11 +17,8 @@ import GoogleMaps
     GeneratedPluginRegistrant.register(with: self)
       
     // MARK: Get keychain values from Ensemble to Host
-    // - With using GroupID
-    // - Without using GroupID, pass nil to the groupId parameter
-      
-//      let name = KeychainService().read(key: "name", groupId: "group.com.ensembleui.starter", accountName: nil, synchronizable: nil).value
-//    print("name: \(name)")
+    // let name = KeychainService().read(key: "name", groupId: nil, accountName: nil, synchronizable: nil).value
+    // print("name: \(name)")
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     
