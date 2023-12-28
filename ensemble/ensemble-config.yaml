@@ -78,8 +78,8 @@ services:
 
 # Legacy Maps, replace with your own keys
 accounts:
-  maps:
-    mapbox_access_token: pk.eyJ1IjoiZW5zZW1ibGV1aSIsImEiOiJjbDVsYTNoeDQwaGQwM21udzhyemR3cDJrIn0.dnn3x8nZVj5ZFO3tn5l8Ww
+  googleMaps:
+    apiKey: AIzaSyD8vwvoaEPEgYemp1EkIETetJMvyS4Ptqk
 
 # override any environment variables on studio.ensembleui.com here
 # e.g. load local assets instead of URL
