@@ -57,6 +57,12 @@ dependencies:
   #     url: https://github.com/EnsembleUI/ensemble_connect.git
   #     ref: main
 
+  # Uncomment to enable location services
+  # ensemble_location:
+  #   git:
+  #     url: https://github.com/EnsembleUI/ensemble_location.git
+  #     ref: main
+
   # Uncomment to enable Auth service
   #  ensemble_auth:
   #    git:

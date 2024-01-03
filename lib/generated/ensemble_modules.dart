@@ -2,6 +2,7 @@ import 'package:ensemble/framework/stub/camera_manager.dart';
 // import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/framework/stub/contacts_manager.dart';
+import 'package:ensemble/framework/stub/location_manager.dart';
 import 'package:ensemble/framework/stub/plaid_link_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:get_it/get_it.dart';
@@ -24,6 +25,9 @@ import 'package:get_it/get_it.dart';
 // Uncomment to enable file manager services
 // import 'package:ensemble_file_manager/file_manager.dart';
 
+// Uncomment to enable location services
+// import 'package:ensemble_location/location_manager.dart';
+
 /// TODO: This class should be generated to enable selected Services
 class EnsembleModules {
   static final EnsembleModules _instance = EnsembleModules._internal();
@@ -37,6 +41,7 @@ class EnsembleModules {
   static const useFiles = false;
   static const useContacts = false;
   static const useConnect = false;
+  static const useLocation = false;
 
   // widgets
   static const enableChat = false;
@@ -71,6 +76,13 @@ class EnsembleModules {
       // GetIt.I.registerSingleton<PlaidLinkManager>(PlaidLinkManagerImpl());
     } else {
       GetIt.I.registerSingleton<PlaidLinkManager>(PlaidLinkManagerStub());
+    }
+
+    if (useLocation) {
+      // Uncomment to enable ensemble_location service
+      // GetIt.I.registerSingleton<LocationManager>(LocationManagerImpl());
+    } else {
+      GetIt.I.registerSingleton<LocationManager>(LocationManagerStub());
     }
 
     if (useAuth) {
