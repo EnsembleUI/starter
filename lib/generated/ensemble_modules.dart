@@ -1,4 +1,5 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
+import 'package:ensemble/framework/stub/deferred_link_manager.dart';
 // import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
 import 'package:ensemble/framework/stub/contacts_manager.dart';
@@ -28,6 +29,9 @@ import 'package:get_it/get_it.dart';
 // Uncomment to enable location services
 // import 'package:ensemble_location/location_manager.dart';
 
+// Uncomment to enable deeplink services
+// import 'package:ensemble_deeplink/deferred_link_manager.dart';
+
 /// TODO: This class should be generated to enable selected Services
 class EnsembleModules {
   static final EnsembleModules _instance = EnsembleModules._internal();
@@ -42,6 +46,7 @@ class EnsembleModules {
   static const useContacts = false;
   static const useConnect = false;
   static const useLocation = false;
+  static const useDeeplink = false;
 
   // widgets
   static const enableChat = false;
@@ -83,6 +88,13 @@ class EnsembleModules {
       // GetIt.I.registerSingleton<LocationManager>(LocationManagerImpl());
     } else {
       GetIt.I.registerSingleton<LocationManager>(LocationManagerStub());
+    }
+
+    if (useDeeplink) {
+      // Uncomment to enable ensemble_deeplink service
+      // GetIt.I.registerSingleton<DeferredLinkManager>(DeferredLinkManagerImpl());
+    } else {
+      GetIt.I.registerSingleton<DeferredLinkManager>(DeferredLinkManagerStub());
     }
 
     if (useAuth) {
