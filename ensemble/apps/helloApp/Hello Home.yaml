@@ -1,15 +1,28 @@
 View:
   styles:
     useSafeArea: true
-  body:
-    # show 2 widgets vertically
-    Column:
-      children:
-        # widget displaying a text
-        - Text:
-            text: Welcome
+  
+  header:
+    title: Flutter & Ensemble
 
-        # reference a reusable widget defined in resources.ensemble
-        - MyCustomWidget1:
-            inputs:
-              name: Peter Parker
+  body:
+    Column:
+      styles:
+        padding: 18
+      children:
+        - Markdown:
+            text: |
+            
+              ### This example of external screen
+              ###
+        - Button:
+            label: Navigate external screen
+            onTap:
+              navigateScreen:
+                name: counterScreen
+                external: true
+                inputs:
+                  message: Hello world
+
+
+
