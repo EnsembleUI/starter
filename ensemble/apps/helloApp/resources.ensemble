@@ -28,7 +28,7 @@ Widgets:
           - Text:
               text: ${customProperty}
 
-Code:
+Scripts:
   utils: |-
     var apiUtilsCount = 0;
     function callMockMethod() {
