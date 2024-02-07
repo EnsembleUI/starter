@@ -13,7 +13,8 @@ This starter project enables running and deploying Ensemble-powered Apps across 
 - Run `flutter create --org com.ensembleui --project-name starter --platform=ios,android,web .` (note the period at the end). If you modified the appId, make sure the org and project name match the bundle ID.
 - Run `flutter pub upgrade`. Run this occasionally when the Ensemble framework has been updated.
 - Run the App with `flutter run`. If you currently have a running iOS or Android emulator, the command will prompt for a selection, otherwise the App will be opened in the web browser.
-- This will run the `helloApp` packaged with this repo. You can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
+- This will run the `Ensemble Kitchen Sink` app. This app is available as a demo app in Ensemble Studio.
+- Optionally, you can package your app locally, or hosted them on your own server or on Ensemble-hosted server. 
 
 ### Modules
 By default, Starter does not include all the modules or capabilities (e.g. camera, location). Excluding these capabilities by default reduces the App's size and not trigger any red flags during your App Store Review (e.g. camera code is present when your app doesn't use camera). Please follow the below steps carefully if your app requires these capabilities:
