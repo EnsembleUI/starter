@@ -59,8 +59,15 @@ Ensemble Studio includes an Online Editor for making changes with type-ahead sup
 - Follow [iOS](https://docs.flutter.dev/deployment/ios), [Android](https://docs.flutter.dev/deployment/android), [MacOS](https://docs.flutter.dev/deployment/macos), [Windows](https://docs.flutter.dev/deployment/windows) release documentation.
 
 ## Misc
-### Run with remote definition (to be continued)
+### Run with remote definition
 To take advantage of Server-driven UI (change your UI at anytime from the server), you can host these definitions on your file server.
+When hosting on your server, follow the following steps. 
+
+- in ensemble/ensemble-config.yaml - specify `from: remote` under `definitions`
+- then change the `remote:` settings to match your server's configuration
+- make sure that your server is configured to serve files with extension `.ensemble` with `text/yaml` mime-type. 
+
+- You can also use the sample python server script to test it out locally, see `custom_http_server.py` and run it as `python3 custom_http_server.py` from command prompt. 
 
 ### For Flutter developers
 Use [Android Studio](https://developer.android.com/studio) to open this project and run `main.dart`.
