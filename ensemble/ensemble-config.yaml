@@ -16,9 +16,11 @@ definitions:
 
   # for hosting definitions on your own server
   remote:
+    # the path to your app on your remote server. For example - http://localhost:8000/
     path: <your_http_server_hosting_the_definitions>
     appId: helloApp
     appHome: Hello Home
+    # path to your i18n (translation files) dir. If you are not using translations, just point to the one that comes with this repo. Example - http://localhost:8000/i18n 
     i18nPath: <full_url_including_scheme_and_host_to_i18n_directory_on_your_server>
 
   # for Ensemble-hosted definitions, simply enter your Ensemble's app key
