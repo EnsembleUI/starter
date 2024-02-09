@@ -65,7 +65,8 @@ When hosting on your server, follow the following steps.
 
 - in ensemble/ensemble-config.yaml - specify `from: remote` under `definitions`
 - then change the `remote:` settings to match your server's configuration
-- make sure that your server is configured to serve files with extension `.ensemble` with `text/yaml` mime-type. 
+- make sure that your server is configured to serve files with extension `.ensemble` with `text/yaml` mime-type.
+- lastly if you are running `flutter run` with web configuration locally, make sure your webserver is properly configured to avoid CORS issues. See `custom_http_server.py` for an example
 
 - You can also use the sample python server script to test it out locally, see `custom_http_server.py` and run it as `python3 custom_http_server.py` from command prompt. 
 
