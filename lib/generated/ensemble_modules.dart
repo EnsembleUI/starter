@@ -1,4 +1,5 @@
 import 'package:ensemble/framework/stub/camera_manager.dart';
+import 'package:ensemble/framework/stub/qr_code_scanner.dart';
 import 'package:ensemble/framework/stub/deferred_link_manager.dart';
 // import 'package:ensemble/framework/stub/ensemble_chat.dart';
 import 'package:ensemble/framework/stub/file_manager.dart';
@@ -20,8 +21,9 @@ import 'package:get_it/get_it.dart';
 // Uncomment to enable ensemble_connect service
 // import 'package:ensemble_connect/plaid_link/plaid_link_manager.dart';
 
-// Uncomment to enable camera services
+// Uncomment to enable camera services or QRCodeScanner widget
 // import 'package:ensemble_camera/camera_manager.dart';
+// import 'package:ensemble_camera/qr_code_scanner.dart';
 
 // Uncomment to enable file manager services
 // import 'package:ensemble_file_manager/file_manager.dart';
@@ -58,8 +60,14 @@ class EnsembleModules {
     if (useCamera) {
       // Uncomment to enable camera service
       // GetIt.I.registerSingleton<CameraManager>(CameraManagerImpl());
+
+      // Uncomment to enable QRCodeScanner widget support
+      // GetIt.I.registerSingleton<EnsembleQRCodeScanner>(
+      //     EnsembleQRCodeScannerImpl.build(EnsembleQRCodeScannerController()));
     } else {
       GetIt.I.registerSingleton<CameraManager>(CameraManagerStub());
+      GetIt.I.registerSingleton<EnsembleQRCodeScanner>(
+          const EnsembleQRCodeScannerStub());
     }
 
     if (useFiles) {
