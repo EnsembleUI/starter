@@ -7,6 +7,8 @@ import 'package:ensemble/framework/stub/contacts_manager.dart';
 import 'package:ensemble/framework/stub/location_manager.dart';
 import 'package:ensemble/framework/stub/plaid_link_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
+import 'package:ensemble/module/location_module.dart';
+// import 'package:ensemble_location/location_module.dart';
 import 'package:get_it/get_it.dart';
 
 // Uncomment to enable ensemble_chat widget
@@ -93,9 +95,9 @@ class EnsembleModules {
 
     if (useLocation) {
       // Uncomment to enable ensemble_location service
-      // GetIt.I.registerSingleton<LocationManager>(LocationManagerImpl());
+      // GetIt.I.registerSingleton<LocationModule>(LocationModuleImpl());
     } else {
-      GetIt.I.registerSingleton<LocationManager>(LocationManagerStub());
+      GetIt.I.registerSingleton<LocationModule>(LocationModuleStub());
     }
 
     if (useDeeplink) {
@@ -107,9 +109,9 @@ class EnsembleModules {
 
     if (useAuth) {
       // Uncomment to enable Auth service
-      // AuthModuleImpl().init();
+      // GetIt.I.registerSingleton<AuthModule>(AuthModuleImpl());
     } else {
-      AuthModuleStub().init();
+      GetIt.I.registerSingleton<AuthModule>(AuthModuleStub());
     }
 
     if (enableChat) {
