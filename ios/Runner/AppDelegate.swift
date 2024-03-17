@@ -1,6 +1,6 @@
 import UIKit
 import Flutter
-import GoogleMaps
+// import GoogleMaps
 import flutter_local_notifications
 
 @UIApplicationMain
@@ -14,7 +14,7 @@ import flutter_local_notifications
   ) -> Bool {
     let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
     methodChannel =  FlutterMethodChannel(name: AppDelegate.methodChannelName, binaryMessenger: controller.binaryMessenger)
-    GMSServices.provideAPIKey("AIzaSyD8vwvoaEPEgYemp1EkIETetJMvyS4Ptqk")
+//     GMSServices.provideAPIKey("AIzaSyD8vwvoaEPEgYemp1EkIETetJMvyS4Ptqk")
     FlutterLocalNotificationsPlugin.setPluginRegistrantCallback { (registry) in
                 GeneratedPluginRegistrant.register(with: registry) }
 
