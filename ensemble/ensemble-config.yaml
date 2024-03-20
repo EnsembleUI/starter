@@ -80,3 +80,23 @@ environmentVariables:
   # This asset value is empty, meaning a reference of {env.exampleAssetVariable}pic.png
   # will be loaded locally from /ensemble/assets/pic.png
   exampleAssetVariable:
+
+# uncomment the following when using firebase analytics.
+# For iOS - Make sure that GoogleService-Info.plist is placed under the ios/Runner folder AND has been added to the Xcode project. Just putting the file under Runner folder is NOT sufficient, it has to be added to the prject using Xcode.
+# For Android - Make sure that google-services.json is placed under android/app folder
+# For Web - make sure that the web config is present under account/firebase/web below.
+#analytics:
+#  provider: firebase
+#  enabled: true
+
+# uncomment the following when using Firebase analytics for the Web and replace the values with the values from your Firebase app.
+#accounts:
+#  firebase:
+#    web:
+#      apiKey: "xxxxx"
+#      authDomain: "xxxxx"
+#      projectId: "xxxx"
+#      storageBucket: "xxxxx"
+#      messagingSenderId: "nnnnnn"
+#      appId: "n:xxxxxxx"
+#      measurementId: "G-xxxxx"
