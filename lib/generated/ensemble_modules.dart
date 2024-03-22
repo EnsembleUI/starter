@@ -1,3 +1,5 @@
+import 'package:ensemble/framework/logging/log_provider.dart';
+import 'package:ensemble/framework/stub/analytics_provider.dart';
 import 'package:ensemble/framework/stub/camera_manager.dart';
 import 'package:ensemble/framework/stub/qr_code_scanner.dart';
 import 'package:ensemble/framework/stub/deferred_link_manager.dart';
@@ -8,6 +10,7 @@ import 'package:ensemble/framework/stub/location_manager.dart';
 import 'package:ensemble/framework/stub/plaid_link_manager.dart';
 import 'package:ensemble/module/auth_module.dart';
 import 'package:ensemble/module/location_module.dart';
+//import 'package:ensemble_firebase_analytics/firebase_analytics.dart';
 // import 'package:ensemble_location/location_module.dart';
 import 'package:get_it/get_it.dart';
 
@@ -51,6 +54,7 @@ class EnsembleModules {
   static const useConnect = false;
   static const useLocation = false;
   static const useDeeplink = false;
+  static const useFirebaseAnalytics = false;
 
   // widgets
   static const enableChat = false;
@@ -119,6 +123,12 @@ class EnsembleModules {
       // GetIt.I.registerSingleton<EnsembleChat>(EnsembleChatImpl());
     } else {
       // GetIt.I.registerSingleton<EnsembleChat>(const EnsembleChatStub());
+    }
+    if ( useFirebaseAnalytics ) {
+      //uncomment to enable firebase analytics
+      //GetIt.I.registerSingleton<LogProvider>(FirebaseAnalyticsProvider());
+    } else {
+      GetIt.I.registerSingleton<LogProvider>(LogProviderStub());
     }
   }
 }

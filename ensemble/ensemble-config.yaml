@@ -88,7 +88,7 @@ environmentVariables:
 #analytics:
 #  provider: firebase
 #  enabled: true
-
+#  enableConsoleLogs: true
 # uncomment the following when using Firebase analytics for the Web and replace the values with the values from your Firebase app.
 #accounts:
 #  firebase:

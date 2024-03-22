@@ -80,7 +80,11 @@ dependencies:
   #  git:
   #    url: https://github.com/EnsembleUI/ensemble_chat.git
   #    ref: main
-
+  # Uncomment to enable firebase analytics
+#  ensemble_firebase_analytics:
+#    git:
+#      url: https://github.com/EnsembleUI/ensemble_firebase_analytics
+#      ref: main
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
