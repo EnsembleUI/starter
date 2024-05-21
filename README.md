@@ -1,3 +1,5 @@
+(This repo is deprecated. Please use [Ensemble](https://github.com/EnsembleUI/ensemble) instead).
+
 ## Overview
 This starter project enables running and deploying Ensemble-powered Apps across iOS, Android, and Web (other platforms are not yet fully supported). It also includes examples on how to integrate Ensemble pages into your existing Flutter App.
 
